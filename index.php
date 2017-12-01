@@ -6,8 +6,8 @@
 	<title>Lyon 9</title>
 </head>
 <body>
-<?php require_once("./menu.php"); ?>
-<p>Ceci est un paragraphe</p>
-<?php require_once("./footer.php");?>
+<?php require_once("./controleur/main.php"); ?>
+
+
 </body>
 </html>

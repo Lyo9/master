@@ -7,6 +7,7 @@
 /****************************************************************************************************************/ 
 
 //Accueil 
+define("FEEDBACK_HEADER","Laissez un commentaire !"); 
 define("MESSAGE_D_ACCUEIL","Bienvenue sur le site de Lyon 9 ! Commencez votre visite ! "); 
 
 

@@ -26,6 +26,13 @@ if(!isset($_SESSION['langue']))
     $_SESSION['langue']="fr"; 
 }
 
+$contenu = "./vue/accueil.php";
+
+if(isset($_GET['action']) && $_GET['action'] == 'leavefeedback')
+{
+    $contenu = "./vue/feedback.php"; 
+}
+
 
 //Récupération des articles 
 $listeArticles = getArticles();
@@ -35,7 +42,7 @@ $listeArticles = getArticles();
 
 //Appel des vues 
 require_once("./vue/menu.php");
-require_once("./vue/accueil.php");
+require_once($contenu);
 require_once("./vue/footer.php");
 
 ?>

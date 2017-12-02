@@ -13,17 +13,26 @@ elseif($_SESSION['langue'] == "en")
 require_once("./lang/EN-en.php");
 
 
-echo "<h1>".FEEDBACK_HEADER."</h1>"
+echo "<h1>".FEEDBACK_HEADER."</h1>"; 
+
+//Affichage des erreurs s'il y en a 
+if (isset($statutErreur))
+{
+    foreach($messageErreurs as $messageErreur)
+    {
+        echo "<div class = 'message-erreur'>".$messageErreur."</div>"; 
+    }
+}
 
 //Affichage du formulaire de feedback 
 ?>
-<form method = "post" name = "config" action = "./index.php">
+<form method = "post" name = "feedback" action = "./index.php?action=sendFeedback">
 
 <input placeholder = "Adresse mail" name = "adresseMail" id="adresseMail"/>
 <input placeholder = "Objet" name = "feedbackObjet"/>
-<textarea placeholder = "Votre commentaire ... " name = "feedback"/>
+<textarea placeholder = "Votre commentaire ... " name = "feedbackTexte"></textarea>
 
-<button type = "submit">Envoyer</button>
+<button type = "submit"> Envoyer</button>
 
 </form>
 

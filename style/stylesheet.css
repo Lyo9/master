@@ -1,4 +1,7 @@
 
+body{
+    margin:0; 
+}
 
 
 .menu_link{
@@ -8,9 +11,6 @@
 p{
     font-family: 'Vollkorn', serif;
 }
-
-
-
 
 
 
@@ -31,6 +31,15 @@ p{
 .changement-langue a img{
     width: 20%;
     border: solid;
+}
+
+.contenu-accueil{
+    border: solid;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logoPrincipal{

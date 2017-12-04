@@ -21,7 +21,7 @@ echo "<h1>".FEEDBACK_HEADER."</h1>"
 
 <input placeholder = "Adresse mail" name = "adresseMail" id="adresseMail"/>
 <input placeholder = "Objet" name = "feedbackObjet"/>
-<textarea placeholder = "Votre commentaire ... " name = "feedback"/>
+<textarea placeholder = "Votre commentaire ... " name = "feedback"></textarea>
 
 <button type = "submit">Envoyer</button>
 

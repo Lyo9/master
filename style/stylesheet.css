@@ -3,6 +3,11 @@ body{
     margin:0; 
 }
 
+body * {
+    box-sizing: border-box; 
+    
+}
+
 
 .menu_link{
     font-family: 'Ubuntu', sans-serif;
@@ -34,13 +39,35 @@ p{
 }
 
 .contenu-accueil{
+    z-index: 2;
+    color: white;
+    width: 100vw;
+    height:100%; 
+    border: solid yellow;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenu-accueil-main{
     border: solid;
     width: 100vw;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+    position: relative;
+
 }
+
+
+
+.image-accueil{
+    height:100%; 
+    width:100%;
+    filter: brightness(50%) contrast(130%); 
+    position:absolute; 
+    z-index:-1; 
+}
+
 
 .logoPrincipal{
     width:10%; 

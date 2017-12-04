@@ -20,20 +20,22 @@ require_once("./lang/EN-en.php");
 </head>
 
 
-<div class = "contenu-accueil">
-    <?php 
-        //Premier test de texte 
-        echo "<div class = 'headerMessage'>".MESSAGE_D_ACCUEIL."</div>"; 
-
-        //Lister deux ou trois articles 
-        if(isset($listeArticles))
-        {
-            foreach($listeArticles as $article)
+<div class = "contenu-accueil-main">
+    <img class = "image-accueil" src = "./ressources/images/accueil.JPG" alt = "Lyon"/>
+    <div class = "contenu-accueil">
+        <?php
+            //Premier test de texte 
+            echo "<div class = 'headerMessage'>".MESSAGE_D_ACCUEIL."</div>"; 
+            //Lister deux ou trois articles 
+            if(isset($listeArticles))
             {
-                echo "<div class = 'article'> ".$article['article_titre']."</div>"; 
+                foreach($listeArticles as $article)
+                {
+                    echo "<div class = 'article'> ".$article['article_titre']."</div>"; 
+                }
             }
-        }
-    ?>
+        ?>
+    </div>
 </div>
 
 

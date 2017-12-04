@@ -60,19 +60,22 @@ p{
 .contenu-carrousel-centre{
     z-index: 2;
     color: white;
-    display: flex;
+    display:flex; 
     flex-wrap: wrap;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
 
 }
 
 .contenu-accueil{
     z-index: 2;
     color: white;
-    width: 30%;
     display: flex;
+    width:100%; 
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .contenu-accueil-principal{
@@ -85,13 +88,22 @@ p{
     position: relative;
 }
 
-.contenu-accueil-main:hover .fleche-de-defilement{
+.contenu-accueil-principal:hover .deflilement-carrousel{
+    display:flex;
+    align-items: center;
+    font-size: 6em !important;
+    color: #ffffff70;
+    animation: inAndOut 3s infinite ease-in-out; 
 
 }
 
 
 .country-flag{
     width:1vw; 
+}
+
+.deflilement-carrousel{
+    color:rgba(255, 255, 255, 0); 
 }
 
 

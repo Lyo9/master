@@ -16,13 +16,13 @@ require_once("./lang/EN-en.php");
 <div class = "contenu-accueil-principal">
     <img class = "image-accueil" src = "./ressources/images/accueil.JPG" alt = "Lyon"/>
     <div class = "contenu-accueil">
-        <i class = "fa fa-arrow-left carrousel-gauche"></i>
+        <i class = "fa fa-arrow-left deflilement-carrousel carrousel-gauche"></i>
         <div class = "contenu-carrousel-centre">
             <div class = "titre-contenu titre">Lyon 9</div>
             <div class = "sous-titre-contenu titre"><?php echo SOUS_TITRE_ACCUEIL; ?></div>
             <div id='commencer-visite' class = 'boutton-carrousel contenu'><?php echo COMMENCER_VISITE;?></div>
         </div>
-        <i class = "fa fa-arrow-right carrousel-droite"></i>
+        <i class = "fa fa-arrow-right deflilement-carrousel carrousel-droite "></i>
     </div>
 </div>
 

@@ -7,8 +7,10 @@
 /****************************************************************************************************************/ 
 
 //Accueil 
+define("COMMENCER_VISITE","Start tour"); 
 define("FEEDBACK_HEADER","Leave a comment !"); 
 define("MESSAGE_D_ACCUEIL","Welcome on Lyon 9 website ! Start your tour ! "); 
+define("SOUS_TITRE_ACCUEIL","From tradition to innovation"); 
 
 //Feedback 
 define("ERREUR_CORPS_MAIL_VIDE", "Error, mail's body can't be empty"); 

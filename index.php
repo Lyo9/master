@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="stylesheet.css"/>
+	<link rel="stylesheet" href="./style/stylesheet.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu|Vollkorn" rel="stylesheet">
 	<title>Lyon 9</title>
 </head>

@@ -1,6 +1,4 @@
-a{
-    margin-left:10px; 
-}
+
 
 
 .menu_link{
@@ -9,4 +7,43 @@ a{
 
 p{
     font-family: 'Vollkorn', serif;
+}
+
+
+
+
+
+
+
+
+/*Accueil*/ 
+
+.changement-langue{
+    border:solid; 
+    display:inline-block; 
+}
+
+.changement-langue a{
+    width: 20%;
+    border: solid;
+}
+
+.changement-langue a img{
+    width: 20%;
+    border: solid;
+}
+
+.logoPrincipal{
+    width:10%; 
+}
+
+.logoPrincipal img{
+    width:100%; 
+}
+
+
+.menu{
+    border: solid;
+    display: flex;
+    justify-content: space-around;
 }

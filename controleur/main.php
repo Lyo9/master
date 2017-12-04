@@ -37,7 +37,6 @@ if(isset($_GET['langue']))
     elseif($langue == 'en')
     {
         $_SESSION['langue'] = 'en'; 
-        echo "The language has been updated !"; 
     }
 }
 

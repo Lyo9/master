@@ -14,17 +14,28 @@ require_once("./lang/EN-en.php");
 
 
 
+?>
+<head>
+    <link rel="stylesheet" href="stylesheet.css"/>
+</head>
 
-//Premier test de texte 
-echo "<div class = 'headerMessage'>".MESSAGE_D_ACCUEIL."</div>"; 
 
-//Lister deux ou trois articles 
-if(isset($listeArticles))
-{
-    foreach($listeArticles as $article)
-    {
-        echo "<div class = 'article'> ".$article['article_titre']."</div>"; 
-    }
-}
+<div class = "contenu-accueil">
+    <?php 
+        //Premier test de texte 
+        echo "<div class = 'headerMessage'>".MESSAGE_D_ACCUEIL."</div>"; 
 
+        //Lister deux ou trois articles 
+        if(isset($listeArticles))
+        {
+            foreach($listeArticles as $article)
+            {
+                echo "<div class = 'article'> ".$article['article_titre']."</div>"; 
+            }
+        }
+    ?>
+</div>
+
+
+<?php 
 ?>

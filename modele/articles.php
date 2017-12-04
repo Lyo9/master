@@ -20,6 +20,7 @@ require_once("ConnexionSql.php");
 }*/
 
 
+//Sélectionner tous les articles confondus
 function getArticles(){
     global $bdd; 
 
@@ -30,6 +31,16 @@ function getArticles(){
     //$data = $results->fetch();
     
     return $results; 
+}
+
+//Insère un article dans la base  (à compléter)
+function creerArticles($valeur){
+    $query = "insert into `article` (`Id_personne`, `Nom`, `Prenom`, `Age`) VALUES (NULL, 'Leponche', 'Bob', '999')";
+}
+
+//Modifie un article dans la base (à compléter)
+function modifierArticle($valeur){
+   $query = "update `personne` set `Nom` = 'InoBobino' where `personne`.`Id_personne` = 1";
 }
       
        

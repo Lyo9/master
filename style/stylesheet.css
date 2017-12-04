@@ -18,10 +18,32 @@ p{
 }
 
 
+.titre{
+    font-family: 'Ubuntu', sans-serif;    
+}
+
+.contenu{
+    font-family: 'Vollkorn', serif;    
+}
+
+
 
 
 
 /*Accueil*/ 
+
+.boutton-carrousel{
+    border-radius: 50px;
+    padding: 14px 24px;
+    font-size: 1em;
+    background-color: #714900;
+    color: white;
+    font-weight: 600;
+}
+
+.boutton-carrousel:hover{
+    cursor: pointer; 
+}
 
 .changement-langue{
     border:solid; 
@@ -41,29 +63,32 @@ p{
 .contenu-accueil{
     z-index: 2;
     color: white;
-    width: 100vw;
-    height:100%; 
-    border: solid yellow;
+    width: 30%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 
 .contenu-accueil-main{
     border: solid;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
     position: relative;
-
 }
+
+
 
 
 
 .image-accueil{
     height:100%; 
     width:100%;
-    filter: brightness(50%) contrast(130%); 
+    filter: brightness(42%) contrast(150%);
     position:absolute; 
     z-index:-1; 
 }
@@ -82,4 +107,15 @@ p{
     border: solid;
     display: flex;
     justify-content: space-around;
+}
+
+
+.titre-contenu{
+    font-size: 8em;
+    margin-bottom: 30px;
+}
+
+.sous-titre-contenu{
+    font-size: 2em;
+    margin-bottom: 30px;
 }

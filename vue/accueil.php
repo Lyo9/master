@@ -23,21 +23,24 @@ require_once("./lang/EN-en.php");
 <div class = "contenu-accueil-main">
     <img class = "image-accueil" src = "./ressources/images/accueil.JPG" alt = "Lyon"/>
     <div class = "contenu-accueil">
-        <?php
-            //Premier test de texte 
-            echo "<div class = 'headerMessage'>".MESSAGE_D_ACCUEIL."</div>"; 
-            //Lister deux ou trois articles 
-            if(isset($listeArticles))
-            {
-                foreach($listeArticles as $article)
-                {
-                    echo "<div class = 'article'> ".$article['article_titre']."</div>"; 
-                }
-            }
-        ?>
+        <div class = "titre-contenu titre">Lyon 9</div>
+        <div class = "sous-titre-contenu titre"><?php echo SOUS_TITRE_ACCUEIL; ?></div>
+        <div id='commencer-visite' class = 'boutton-carrousel contenu'><?php echo COMMENCER_VISITE;?>
+        </div>
+
     </div>
 </div>
 
 
 <?php 
+
+//Lister deux ou trois articles
+/*if(isset($listeArticles))
+{
+    foreach($listeArticles as $article)
+    {
+        echo "<div class = 'article'> ".$article['article_titre']."</div>"; 
+    }
+}*/
+
 ?>

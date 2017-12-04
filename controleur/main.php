@@ -25,6 +25,23 @@ if(!isset($_SESSION['langue']))
     $_SESSION['langue']="fr"; 
 }
 
+//On vérifie s'il y a une modification des langues 
+if(isset($_GET['langue']))
+{
+    $langue = $_GET['langue']; 
+    //Si l'utilisateur a cliqué sur le drapeau français
+    if($langue == 'fr')
+    {
+        $_SESSION['langue'] = 'fr';
+    }
+    elseif($langue == 'en')
+    {
+        $_SESSION['langue'] = 'en'; 
+        echo "The language has been updated !"; 
+    }
+}
+
+
 //Récupération du fichier langue 
 if($_SESSION['langue'] == "fr")
 require_once("./lang/FR-fr.php");

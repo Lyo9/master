@@ -5,10 +5,16 @@
 /*Click sur le logo = retour à l'accueil*************************************************************************/
 /****************************************************************************************************************/ 
 
+?>
+<link rel="stylesheet" href="stylesheet.css"/>
+
+<div class = "logoPrincipal">
+    <a href = "./index.php">
+        <img src = "./ressources/logo.png" alt = "logo"/>
+    </a>
+</div> 
+
+<?php 
 
 
-echo '<div class = "logoPrincipal">
-        <a href = "./index.php">
-            <img src = "./ressources/logo.png" alt = "logo"/>
-        </a>
-        </div> ';
+?>

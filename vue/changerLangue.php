@@ -6,6 +6,12 @@
 /*Appelé par le contrôleur lorsque le visiteur clique sur "feedback" ***************************************************/
 /****************************************************************************************************************/ 
 
+?>
+<head>
+    <link rel="stylesheet" href="stylesheet.css"/>
+</head>
+<div class = "changement-langue">
+<?php
 
 if(isset($_SESSION['langue']))
 {
@@ -23,3 +29,4 @@ if(isset($_SESSION['langue']))
 
 
 ?>
+</div>

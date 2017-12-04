@@ -11,14 +11,10 @@ if($_SESSION['langue'] == "fr")
 require_once("./lang/FR-fr.php");
 elseif($_SESSION['langue'] == "en")
 require_once("./lang/EN-en.php");
-?>
-<head>
-    <link rel="stylesheet" href="stylesheet.css"/>
-</head>
 
-<h1><?php echo FEEDBACK_HEADER; ?></h1>
 
-<?php 
+echo "<h1>".FEEDBACK_HEADER."</h1>"; 
+
 //Affichage des erreurs s'il y en a 
 if (isset($statutErreur))
 {

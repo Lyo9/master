@@ -14,11 +14,9 @@ require_once("./lang/EN-en.php");
 
 
 
-?>
-<head>
-    <link rel="stylesheet" href="stylesheet.css"/>
-</head>
 
+//Premier test de texte 
+echo "<div class = 'headerMessage'>".MESSAGE_D_ACCUEIL."</div>"; 
 
 <div class = "contenu-accueil-principal">
     <img class = "image-accueil" src = "./ressources/images/accueil.JPG" alt = "Lyon"/>
@@ -26,8 +24,6 @@ require_once("./lang/EN-en.php");
         <div class = "titre-contenu titre">Lyon 9</div>
         <div class = "sous-titre-contenu titre"><?php echo SOUS_TITRE_ACCUEIL; ?></div>
         <div id='commencer-visite' class = 'boutton-carrousel contenu'><?php echo COMMENCER_VISITE;?>
-        <i class = "fa-arrow-left fleche-de-defilement gauche"></i>
-        <i class = "fa-arrow-right fleche-de-defilement droite"></i>
     </div>
 
     </div>

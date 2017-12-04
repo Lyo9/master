@@ -8,8 +8,5 @@
 <body>
 <?php require_once("./controleur/main.php"); ?>
 
-<div>
-    ceci est un test
-</div>
 </body>
 </html>

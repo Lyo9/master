@@ -26,7 +26,7 @@ require_once("./lang/EN-en.php");
         <div class = "titre-contenu titre">Lyon 9</div>
         <div class = "sous-titre-contenu titre"><?php echo SOUS_TITRE_ACCUEIL; ?></div>
         <div id='commencer-visite' class = 'boutton-carrousel contenu'><?php echo COMMENCER_VISITE;?>
-        <div class = "arrow"
+        <div class = "fleche-de-defilement droite">
     </div>
 
     </div>

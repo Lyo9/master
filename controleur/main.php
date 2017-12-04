@@ -37,6 +37,7 @@ if(isset($_GET['langue']))
     elseif($langue == 'en')
     {
         $_SESSION['langue'] = 'en'; 
+        echo "The language has been updated !"; 
     }
 }
 
@@ -128,9 +129,9 @@ $listeArticles = getArticles();
 
 
 //Appel des vues 
-//require_once("./vue/logo.php"); 
-//require_once("./vue/menu.php");
+require_once("./vue/logo.php"); 
+require_once("./vue/menu.php");
 require_once($contenu);
-//require_once("./vue/footer.php");
+require_once("./vue/footer.php");
 
 ?>

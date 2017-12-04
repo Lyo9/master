@@ -32,6 +32,7 @@ if (isset($statutErreur))
 <input placeholder = "Objet" name = "feedbackObjet"/>
 <textarea placeholder = "Votre commentaire ... " name = "feedbackTexte"></textarea>
 
+
 <button type = "submit"> Envoyer</button>
 
 </form>

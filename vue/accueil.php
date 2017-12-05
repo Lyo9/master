@@ -12,6 +12,11 @@ require_once("./lang/FR-fr.php");
 elseif($_SESSION['langue'] == "en")
 require_once("./lang/EN-en.php");
 
+
+//Inclusion du menu 
+require_once("vue/menu.php");
+
+
 ?>
 <div class = "contenu-accueil-principal">
     <div class = "carrousel" id = "carrousel">

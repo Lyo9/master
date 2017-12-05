@@ -10,3 +10,14 @@
         opacity:0; 
     }
 }
+
+@keyframes carrouselSideHover {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1; 
+    }
+    
+}

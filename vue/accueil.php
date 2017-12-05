@@ -14,8 +14,6 @@ require_once("./lang/EN-en.php");
 
 
 //Inclusion du menu 
-require_once("vue/menu.php");
-
 
 ?>
 <div class = "contenu-accueil-principal">
@@ -73,9 +71,6 @@ require_once("vue/menu.php");
     </div>
 
 </div>
-
-
-
 <?php 
 
 //Lister deux ou trois articles

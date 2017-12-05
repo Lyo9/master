@@ -10,6 +10,8 @@
 define("COMMENCER_VISITE","Start tour"); 
 define("FEEDBACK_HEADER","Leave a comment !"); 
 define("MESSAGE_D_ACCUEIL","Welcome on Lyon 9 website ! Start your tour ! "); 
+define("SLIDE_DEUX_TEXTE","An intense and active neighborhood"); 
+define("SLIDE_DEUX_TITRE","Live this place"); 
 define("SOUS_TITRE_ACCUEIL","From tradition to innovation"); 
 
 //Feedback 

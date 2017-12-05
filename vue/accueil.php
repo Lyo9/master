@@ -39,9 +39,9 @@ require_once("vue/menu.php");
             <div class = "contenu-accueil">
                 <i class = "fa fa-arrow-left defilement-carrousel carrousel-gauche" onClick="defileGauche(1)"></i>
                 <div class = "contenu-carrousel-centre">
-                    <div class = "titre-contenu titre">Lyon 9</div>
-                    <div class = "sous-titre-contenu titre"><?php echo SOUS_TITRE_ACCUEIL; ?></div>
-                    <div id='commencer-visite' class = 'boutton-carrousel contenu'><?php echo COMMENCER_VISITE;?></div>
+                    <div class = "titre-contenu titre"><?php echo SLIDE_DEUX_TITRE; ?></div>
+                    <div class = "sous-titre-contenu titre"><?php echo SLIDE_DEUX_TEXTE; ?></div>
+                    <div id='commencer-visite' class = 'boutton-carrousel contenu'><?php echo SLIDE_DEUX_BOUTON;?></div>
                 </div>
                 <i class = "fa fa-arrow-right defilement-carrousel carrousel-droite " onClick="defileDroite(1)"></i>
                 </div>

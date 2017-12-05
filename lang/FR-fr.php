@@ -10,6 +10,9 @@
 define("COMMENCER_VISITE","Commencer la visite"); 
 define("FEEDBACK_HEADER","Laissez un commentaire !"); 
 define("MESSAGE_D_ACCUEIL","Bienvenue sur le site de Lyon 9 ! Commencez votre visite ! "); 
+define("SLIDE_DEUX_BOUTON","Histoire et vie du quartier"); 
+define("SLIDE_DEUX_TEXTE","Un quartier en pleine activité"); 
+define("SLIDE_DEUX_TITRE","Vivez le quartier"); 
 define("SOUS_TITRE_ACCUEIL","De la tradition à l'innovation"); 
 
 //Feedback 

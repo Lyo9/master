@@ -66,6 +66,7 @@ require_once("./lang/EN-en.php");
             </div>
         </div>
     </div>
+
 </div>
 
 
@@ -82,3 +83,4 @@ require_once("./lang/EN-en.php");
 }*/
 
 ?>
+

@@ -24,6 +24,14 @@ p{
 }
 
 
+/* Menu */ 
+
+.country-flag{
+    width:1vw; 
+}
+
+
+
 
 
 
@@ -60,24 +68,66 @@ p{
 .contenu-carrousel-centre{
     z-index: 2;
     color: white;
-    display: flex;
+    display:flex; 
     flex-wrap: wrap;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
 
 }
 
 .contenu-accueil{
     z-index: 2;
     color: white;
-    width: 30%;
     display: flex;
+    width:100%; 
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .contenu-accueil-principal{
-    border: solid;
-    height: 99.4vh;
+    height: 100vh;
+    position: relative;
+    overflow:hidden; 
+}
+
+
+.contenu-accueil-principal:hover .defilement-carrousel{
+    display:flex;
+    align-items: center;
+    font-size: 6em !important;
+    color: #ffffff70;
+    padding:1vw; 
+    -webkit-animation: inAndOut 3s infinite; 
+}
+
+
+.defilement-carrousel{
+    color:rgba(255, 255, 255, 0); 
+}
+
+.defilement-carrousel:hover{
+    -webkit-animation: 0 !important; 
+    color:white !important;   
+    -webkit-transition:all 0.4s ease-in;
+    
+    opacity:1;     
+    background-color: rgba(196, 184, 158, 0.308);
+    cursor: pointer; 
+    animation: carrouselSideHover 1s ease-in;
+
+}
+
+.carrousel{
+    width: 400vw;
+    display: flex;
+    position:absolute !important; 
+}
+
+.carrousel-element{
+    height: 100vh;
+    width:100%; 
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -85,21 +135,18 @@ p{
     position: relative;
 }
 
-.contenu-accueil-main:hover .fleche-de-defilement{
-
+.carrousel-droite:hover{
+    border-radius: 50px 0px 0px 50px; 
 }
-
-
-.country-flag{
-    width:1vw; 
+.carrousel-gauche:hover{
+    border-radius: 0 50px 50px 0; 
 }
-
 
 
 .image-accueil{
     height:100%; 
     width:100%;
-    filter: brightness(42%) contrast(150%);
+    filter: brightness(55%) contrast(150%);
     position:absolute; 
     z-index:-1; 
 }

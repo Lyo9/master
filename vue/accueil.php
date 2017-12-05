@@ -14,6 +14,7 @@ require_once("./lang/EN-en.php");
 
 ?>
 <div class = "contenu-accueil-principal">
+    <?php require_once("vue/menu.php");?>
     <img class = "image-accueil" src = "./ressources/images/accueil.JPG" alt = "Lyon"/>
     <div class = "contenu-accueil">
         <i class = "fa fa-arrow-left carrousel-gauche"></i>
@@ -24,6 +25,7 @@ require_once("./lang/EN-en.php");
         </div>
         <i class = "fa fa-arrow-right carrousel-droite"></i>
     </div>
+
 </div>
 
 
@@ -39,3 +41,4 @@ require_once("./lang/EN-en.php");
 }*/
 
 ?>
+

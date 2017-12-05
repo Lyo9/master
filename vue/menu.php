@@ -1,10 +1,7 @@
-<style>
 
-</style>
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 <div class="navbar" id="navbar">
-    <a href="#">Accueil</a>
     <div class="dropdown">
         <button class="dropbtn">Histoire et vie du quartier
             <i class="fa fa-caret-down"></i>
@@ -40,18 +37,6 @@
         </div>
 
     </div>
-</div>
-<script>
-    window.onscroll = function() {myFunction()};
-    var navbar = document.getElementById("navbar");
-    console.log(navbar);
-    var sticky = navbar.offsetTop;
-    function myFunction() {
-        if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-        } else {
-            navbar.classList.remove("sticky");
-        }
-    }
+    <a class="btn-simple" href="#">Accueil</a>
 
-</script>
+</div>

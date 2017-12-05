@@ -169,12 +169,13 @@ p{
 
 
 .titre-contenu{
-    font-size: 8em;
+    font-size: 6em;
     margin-bottom: 30px;
+    text-align:center; 
 }
 
 .sous-titre-contenu{
-    font-size: 2em;
+    font-size: 1.7em;
     margin-bottom: 30px;
 }
 

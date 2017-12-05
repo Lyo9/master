@@ -10,8 +10,20 @@
 define("COMMENCER_VISITE","Start tour"); 
 define("FEEDBACK_HEADER","Leave a comment !"); 
 define("MESSAGE_D_ACCUEIL","Welcome on Lyon 9 website ! Start your tour ! "); 
+
+define("SLIDE_DEUX_BOUTON","An intense and active neighborhood"); 
 define("SLIDE_DEUX_TEXTE","An intense and active neighborhood"); 
 define("SLIDE_DEUX_TITRE","Live this place"); 
+
+define("SLIDE_TROIS_BOUTON","Neighorhood's places"); 
+define("SLIDE_TROIS_TEXTE","... and its must-sees not to be missed"); 
+define("SLIDE_TROIS_TITRE","Discover new places"); 
+
+define("SLIDE_QUATRE_BOUTON","Histoire et vie du quartier"); 
+define("SLIDE_QUATRE_TEXTE","Un quartier en pleine activité"); 
+define("SLIDE_QUATRE_TITRE","Vivez le quartier"); 
+
+
 define("SOUS_TITRE_ACCUEIL","From tradition to innovation"); 
 
 //Feedback 

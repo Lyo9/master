@@ -49,6 +49,7 @@
     <div class="footer-section-essentiel mairie">
            <div class="img-mairie">
                 <img class="mairie9eme" src="./ressources/images/mairie9eme.JPG">
+
             </div>
             <div class="desc-img-mairie">
                 <h3>La Mairie du 9e arrondissement</h3>

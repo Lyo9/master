@@ -21,9 +21,10 @@ p{
 .contenu{
     font-family: 'Vollkorn', serif;    
 }
-
-
-
+.footer_last_section{
+    color: #ffffff;
+    font-size:  15px;
+}
 
 
 
@@ -407,4 +408,117 @@ Vue lieux culturels
 }
 .btn-simple:hover{
     background-color: #714900;
+}
+/*-------------------------------
+ Design du footer
+ --------------------------------*/
+.footer_section{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.flex-footer{
+    margin: 1px;
+    background-color: #333333;
+    justify-content: center;
+
+}
+.footer-nav-content{
+    display: block;
+    margin:0 auto;
+}
+.footer-nav-title h3{
+    margin-top: 20%;
+}
+.footer-nav-content a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.logo-footer{
+    width: 40%;
+}
+.footer-section-logo{
+    width: 100%;
+}
+.footer_last_section{
+    width: 23%;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+.footer-section-infos li{
+    margin-bottom: 40px
+}
+.flex-footer h3{
+    font-size: 17px;
+}
+.footer_last_section{
+margin: 10px;
+/*background-color:   rgba(26, 0, 6, 0.1);*/
+background-color: rgba(0,0,0,0.1);
+text-align: center;
+padding: 5px;
+}
+.image_footer_1{
+    width: 100%;
+}
+.footer_last_section span{
+    font-size: 14px;
+}
+.footer_last_section:hover{
+    background-color: #714900;
+    border-radius: 5px;
+}
+.facebook:hover{
+    color:#4463a5;
+}
+.twitter:hover{
+    color: #349fe3
+}
+.instagram:hover{
+    color: #f5aa1d;
+}
+.icon{
+    margin: 0px 30px 0px 0px ;
+}
+.instagram{
+    margin-right: 0px;
+}
+.footer-section-essentiel{
+    padding: 5px;
+    margin: 10px;
+    justify-content: space-evenly;
+}
+.autreinfos{
+    width: 30%;
+}
+.mairie{
+    display: flex;
+    width: 60%;
+    flex-wrap: wrap;
+}
+.img-mairie{
+    width: 45%;
+    margin: 0px 10px 0px 10px;
+}
+.desc-img-mairie{
+    width: 40%;
+}
+.mairie9eme{
+    width: 100%;
+    height: 35%
+}
+.desc-img-mairie, .desc-img-mairie a{
+    color: white;
+}
+.infos-9eme{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: white;
 }

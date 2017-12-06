@@ -26,6 +26,8 @@ define("SLIDE_QUATRE_TITRE","Vivez le quartier");
 
 define("SOUS_TITRE_ACCUEIL","From tradition to innovation"); 
 
+define("TEXTE_PRESENTATION_CONTENU","The 9th district of Lyon is in a fully demographic expansion. Located on the Eastern side of the city, it provides a lot of cultural and sporty activites as well as varied hotels and restaurants. You can appreciate its traditionnal aspect so well conserved by the time, unless your main goal is seing the dynamism and strong activity of the neighborhood ! C'est l'occasion de découvrir de nouveaux passe-temps en famille ou entre amis. ");
+
 //Feedback 
 define("ERREUR_CORPS_MAIL_VIDE", "Error, mail's body can't be empty"); 
 define("ERREUR_MAIL_INVALIDE","Error, please enter a valid email adress");

@@ -15,6 +15,7 @@ require_once("./lang/EN-en.php");
 
 //Inclusion du menu 
 ?>
+<img class = "image-fond" src = "./ressources/images/accueilFond.JPG"/>
 <div class = "contenu-accueil-principal">
     <div class = "carrousel" id = "carrousel">
 
@@ -68,8 +69,43 @@ require_once("./lang/EN-en.php");
             </div>
         </div>
     </div> 
-
 </div>
+
+<div class = "contenu-hors-carrousel">
+    <div class = "map-container">
+        <div class = "map" id = "map">
+            Placer la map ici
+            <script>
+              function initMap() {
+                var uluru = {lat: 45.780426, lng: 4.805059};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 14,
+                  center: uluru
+                });
+                var marker = new google.maps.Marker({
+                  position: uluru,
+                  map: map
+                });
+              }
+            </script>
+            <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAI0Lj-V2CL0k77wK_EyyATp4SCDUmenf8&callback=initMap">
+            </script>
+        </div>
+    </div>
+    <div class = "texte-presentation-bandeau">
+        <div class = "texte-presentation-titre titre">
+            Lyon 9
+        </div>
+        <div class = "texte-presentation-header-border">
+            <img src = "./ressources/images/footerSymbol.png"/>
+        </div>
+        <div class = "texte-presentation-contenu contenu">
+            <?php echo TEXTE_PRESENTATION_CONTENU; ?>
+        </div>
+    </div>
+</div>
+
 <?php 
 
 //Lister deux ou trois articles

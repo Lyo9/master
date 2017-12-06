@@ -14,7 +14,6 @@ require_once("./lang/EN-en.php");
 
 
 //Inclusion du menu 
-
 ?>
 <div class = "contenu-accueil-principal">
     <div class = "carrousel" id = "carrousel">
@@ -37,9 +36,9 @@ require_once("./lang/EN-en.php");
             <div class = "contenu-accueil">
                 <i class = "fa fa-arrow-left defilement-carrousel carrousel-gauche" onClick="defileGauche(1)"></i>
                 <div class = "contenu-carrousel-centre">
-                    <div class = "titre-contenu titre">Lyon 9</div>
-                    <div class = "sous-titre-contenu titre"><?php echo SOUS_TITRE_ACCUEIL; ?></div>
-                    <div id='commencer-visite' class = 'boutton-carrousel contenu'><?php echo COMMENCER_VISITE;?></div>
+                    <div class = "titre-contenu titre"><?php echo SLIDE_DEUX_TITRE; ?></div>
+                    <div class = "sous-titre-contenu titre"><?php echo SLIDE_DEUX_TEXTE; ?></div>
+                    <div id='commencer-visite' class = 'boutton-carrousel contenu'><?php echo SLIDE_DEUX_BOUTON;?></div>
                 </div>
                 <i class = "fa fa-arrow-right defilement-carrousel carrousel-droite " onClick="defileDroite(1)"></i>
                 </div>
@@ -49,9 +48,9 @@ require_once("./lang/EN-en.php");
             <div class = "contenu-accueil">
                 <i class = "fa fa-arrow-left defilement-carrousel carrousel-gauche" onClick="defileGauche(2)"></i>
                 <div class = "contenu-carrousel-centre">
-                    <div class = "titre-contenu titre">Lyon 9</div>
-                    <div class = "sous-titre-contenu titre"><?php echo SOUS_TITRE_ACCUEIL; ?></div>
-                    <div id='commencer-visite' class = 'boutton-carrousel contenu'><?php echo COMMENCER_VISITE;?></div>
+                    <div class = "titre-contenu titre"><?php echo SLIDE_TROIS_TITRE; ?></div>
+                    <div class = "sous-titre-contenu titre"><?php echo SLIDE_TROIS_TEXTE; ?></div>
+                    <div id='commencer-visite' class = 'boutton-carrousel contenu'><?php echo SLIDE_TROIS_BOUTON;?></div>
                 </div>
                 <i class = "fa fa-arrow-right defilement-carrousel carrousel-droite " onClick="defileDroite(2)"></i>
             </div>
@@ -61,14 +60,14 @@ require_once("./lang/EN-en.php");
             <div class = "contenu-accueil">
                 <i class = "fa fa-arrow-left defilement-carrousel carrousel-gauche" onClick="defileGauche(3)"></i>
                 <div class = "contenu-carrousel-centre">
-                    <div class = "titre-contenu titre">Lyon 9</div>
-                    <div class = "sous-titre-contenu titre"><?php echo SOUS_TITRE_ACCUEIL; ?></div>
-                    <div id='commencer-visite' class = 'boutton-carrousel contenu'><?php echo COMMENCER_VISITE;?></div>
+                    <div class = "titre-contenu titre"><?php echo SLIDE_QUATRE_TITRE; ?></div>
+                    <div class = "sous-titre-contenu titre"><?php echo SLIDE_QUATRE_TEXTE; ?></div>
+                    <div id='commencer-visite' class = 'boutton-carrousel contenu'><?php echo SLIDE_QUATRE_BOUTON;?></div>
                 </div>
                 <i class = "fa fa-arrow-right defilement-carrousel carrousel-droite " onClick="defileDroite(3)"></i>
             </div>
         </div>
-    </div>
+    </div> 
 
 </div>
 <?php 

@@ -14,7 +14,6 @@ require_once("./lang/EN-en.php");
 
 
 //Inclusion du menu 
-
 ?>
 <div class = "contenu-accueil-principal">
     <div class = "carrousel" id = "carrousel">
@@ -68,7 +67,7 @@ require_once("./lang/EN-en.php");
                 <i class = "fa fa-arrow-right defilement-carrousel carrousel-droite " onClick="defileDroite(3)"></i>
             </div>
         </div>
-    </div>
+    </div> 
 
 </div>
 <?php 

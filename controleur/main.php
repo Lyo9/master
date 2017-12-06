@@ -147,6 +147,6 @@ $listeArticles = getArticles();
 //Appel des vues 
 require_once("vue/menu.php");
 require_once($contenu);
-//require_once("./vue/footer.php");
+require_once("./vue/footer.php");
 
 ?>

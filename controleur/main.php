@@ -53,72 +53,88 @@ require_once("./lang/EN-en.php");
 $contenu = "./vue/accueil.php";
 
 
-//L'utilisateur a cliqué sur "Laisser un commentaire"
-if(isset($_GET['action']) && $_GET['action'] == 'leavefeedback')
+//L'utilisateur a cliqué sur un lien
+if(isset($_GET['action']))
 {
-    //Chargement de l'interface "laisser un commentaire" 
-    $contenu = "./vue/feedback.php"; 
+
+    $action = $_GET['action']; 
+
+    //L'utilisateur a choisi un lien du menu culture 
+    if($action == "culture")
+    {
+        $contenu = "./vue/lieux_culturels.php"; 
+    }
+
+    //L'utilisateur a cliqué sur "Laisser un commentaire"
+    if($action == 'leavefeedback')
+    {
+        //Chargement de l'interface "laisser un commentaire" 
+        $contenu = "./vue/feedback.php"; 
+    }
+
+    //L'utilisateur veut envoyer son mail 
+    if($action == 'sendFeedback')
+    {
+        $statutErreur = null; 
+        $messageErreurs = array(); 
+
+        //Récupération des informations 
+        $mail = $_POST['adresseMail']; 
+        $objet = $_POST['feedbackObjet']; 
+        $feedbackMessage = $_POST['feedbackTexte']; 
+
+        //$pattern = "#[A-Z0-9a-z._%+-@]#"; 
+
+        //Si toutes les valeurs sont OK (Série de tests)
+        //Adresse mail nulle 
+        if($mail == "")
+        {
+            $statutErreur = "erreur"; 
+            $message = ERREUR_MAIL_INVALIDE; 
+            array_push($messageErreurs,$message); 
+        }
+
+        //Adresse mail invalide 
+        /*if(preg_match($pattern, $mail))
+        {
+            $statutErreur = "erreur"; 
+            $messageErreur = ERREUR_MAIL_INVALIDE; 
+        }
+        */
+
+        //Si pas d'objet dans le mail 
+        if($_POST['feedbackObjet'] == "")
+        {
+            $objet = "Lyon 9"; 
+        }
+
+        //Si la zone de commentaire est vide 
+        if($feedbackMessage == "")
+        {
+            $statutErreur = "erreur"; 
+            $message = ERREUR_CORPS_MAIL_VIDE;
+            array_push($messageErreurs,$message);       
+        }
+
+
+        //Si aucune erreur 
+        if($statutErreur != "erreur")
+        {
+            //On envoie le mail 
+
+            //On confirme le bon déroulement de l'envoi du feedback 
+            $statutErreur = "succes"; 
+            $message = SUCCES_ENVOI_MAIL; 
+            array_push($messageErreurs,$message);
+        }
+
+
+        //Chargement de l'interface "Laisser un commentaire" 
+        $contenu = "./vue/feedback.php"; 
+    }
+
 }
 
-if(isset($_GET['action']) && $_GET['action'] == 'sendFeedback')
-{
-    $statutErreur = null; 
-    $messageErreurs = array(); 
-
-    //Récupération des informations 
-    $mail = $_POST['adresseMail']; 
-    $objet = $_POST['feedbackObjet']; 
-    $feedbackMessage = $_POST['feedbackTexte']; 
-
-    //$pattern = "#[A-Z0-9a-z._%+-@]#"; 
-
-    //Si toutes les valeurs sont OK (Série de tests)
-    //Adresse mail nulle 
-    if($mail == "")
-    {
-        $statutErreur = "erreur"; 
-        $message = ERREUR_MAIL_INVALIDE; 
-        array_push($messageErreurs,$message); 
-    }
-
-    //Adresse mail invalide 
-    /*if(preg_match($pattern, $mail))
-    {
-        $statutErreur = "erreur"; 
-        $messageErreur = ERREUR_MAIL_INVALIDE; 
-    }
-    */
-
-    //Si pas d'objet dans le mail 
-    if($_POST['feedbackObjet'] == "")
-    {
-        $objet = "Lyon 9"; 
-    }
-
-    //Si la zone de commentaire est vide 
-    if($feedbackMessage == "")
-    {
-        $statutErreur = "erreur"; 
-        $message = ERREUR_CORPS_MAIL_VIDE;
-        array_push($messageErreurs,$message);       
-    }
-
-
-    //Si aucune erreur 
-    if($statutErreur != "erreur")
-    {
-        //On envoie le mail 
-
-        //On confirme le bon déroulement de l'envoi du feedback 
-        $statutErreur = "succes"; 
-        $message = SUCCES_ENVOI_MAIL; 
-        array_push($messageErreurs,$message);
-    }
-
-
-    //Chargement de l'interface "Laisser un commentaire" 
-    $contenu = "./vue/feedback.php"; 
-}
 
 
 

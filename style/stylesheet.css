@@ -1,6 +1,4 @@
-a{
-    margin-left:10px; 
-}
+
 
 body{
     margin:0; 
@@ -22,15 +20,6 @@ p{
 .contenu{
     font-family: 'Vollkorn', serif;    
 }
-
-
-/* Menu */ 
-
-.country-flag{
-    width:1vw; 
-}
-
-
 
 
 
@@ -183,6 +172,8 @@ p{
 Style de la barre de navigation
  ----------------------------*/
 /* Style the navbar */
+
+/*
 .inn_navbar{
     background-color: inherit;
 }
@@ -213,12 +204,7 @@ Style de la barre de navigation
     float: right;
     overflow: hidden;
 }
-.dropdown:hover .dropbtn {
-    background-color: #714900;
-}
-.btn-simple:hover{
-    background-color: #714900;
-}
+
 .btn-simple{
     font-size: 16px;
     border: none;
@@ -247,4 +233,67 @@ Style de la barre de navigation
 
 .dropdown:hover .dropdown-content {
     display: block;
+}*/ 
+
+.inn_navbar{
+    background-color: inherit;
+}
+.navbar {
+    background-color: #333;
+    z-index: 30;
+}
+
+.navbar a {
+    font-size: 16px;
+    color: white!important;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius:4px;
+}
+
+
+.dropbtn {
+    background-color:inherit;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: rgba(158, 158, 158, 0.486);
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: inherit}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.dropdown:hover .dropbtn {
+    background-color: #714900;
+}
+.btn-simple:hover{
+    background-color: #714900;
 }

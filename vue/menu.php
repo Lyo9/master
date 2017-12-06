@@ -34,9 +34,13 @@
             <a href="#">Lieux culturels</a>
             <a href="#">Lieux sportif</a>
             <a href="#">Infranstructure</a>
-
         </div>
 
     </div>
+
+    <?php 
+    require_once("./vue/changerLangue.php");
+
+    ?>
 
 </div>

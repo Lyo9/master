@@ -252,6 +252,11 @@ Style de la barre de navigation
     border-radius:4px;
 }
 
+.country-flag{
+    width: 2%;
+    margin-bottom: -9px;
+}
+
 
 .dropbtn {
     background-color:inherit;

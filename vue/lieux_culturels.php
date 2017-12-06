@@ -6,6 +6,11 @@
     <img class = "image-fond" src = "./ressources/images/fond_culturel.JPG"/>
 
     <div class="mon-container">
+
+        <div class = "titre-categorie titre">
+            <?php echo LIEUX_CULTURELS;?>
+        </div>
+
         <div class="flex-container" style="margin-bottom: 5px">
             <div class="box_lieux lieux1">
                 <div class="calque calque_box1">

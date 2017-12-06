@@ -178,10 +178,31 @@ p{
     text-align:center; 
 }
 
-.texte-presentation{
-    margin-top:10%;
-    padding: 10px 30%;
+.texte-presentation-bandeau > *{
+    padding: 10px 20%;
     text-align: center;
+}
+
+
+.texte-presentation-contenu{
+    font-size:1.8em;
+    text-align:justify;
+
+}
+
+
+.texte-presentation-titre{
+    font-size:6em;
+}
+
+.texte-presentation-bandeau{
+    background-color: white; 
+    margin-top:10px;
+}
+
+.texte-presentation-header-border{
+        margin-top: -24px;
+
 }
 
 .sous-titre-contenu{

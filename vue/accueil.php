@@ -15,6 +15,7 @@ require_once("./lang/EN-en.php");
 
 //Inclusion du menu 
 ?>
+<img class = "image-fond" src = "./ressources/images/accueilFond.JPG"/>
 <div class = "contenu-accueil-principal">
     <div class = "carrousel" id = "carrousel">
 
@@ -68,8 +69,6 @@ require_once("./lang/EN-en.php");
             </div>
         </div>
     </div> 
-
-
 </div>
 
 <div class = "contenu-hors-carrousel">
@@ -94,8 +93,16 @@ require_once("./lang/EN-en.php");
             </script>
         </div>
     </div>
-    <div class = "texte-presentation contenu">
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    <div class = "texte-presentation-bandeau">
+        <div class = "texte-presentation-titre titre">
+            Lyon 9
+        </div>
+        <div class = "texte-presentation-header-border">
+            <img src = "./ressources/images/footerSymbol.png"/>
+        </div>
+        <div class = "texte-presentation-contenu contenu">
+            <?php echo TEXTE_PRESENTATION_CONTENU; ?>
+        </div>
     </div>
 </div>
 

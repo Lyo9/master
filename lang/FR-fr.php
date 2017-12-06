@@ -27,6 +27,8 @@ define("SLIDE_QUATRE_TITRE","Pratiquez, partagez");
 
 define("SOUS_TITRE_ACCUEIL","De la tradition à l'innovation"); 
 
+define("TEXTE_PRESENTATION_CONTENU","Le neuvième arrondissement de la ville de Lyon est en pleine expansion démographique. Situé sur la partie Ouest de la ville il propose des centaines d'activités sportives ou culturelles ainsi que des hôtels et restaurants en tous genres. Laissez-vous tenter par son côté traditionnel si bien conservé au fil du temps, ou au contraire par son dynamisme et sa forte activité. C'est l'occasion de découvrir de nouveaux passe-temps en famille ou entre amis. ");
+
 //Feedback 
 define("ERREUR_CORPS_MAIL_VIDE", "Erreur, le corps du mail ne peut pas être vide."); 
 define("ERREUR_MAIL_INVALIDE","Erreur, veuillez saisir une adresse mail valide.");

@@ -25,8 +25,8 @@ require_once("./lang/EN-en.php");
                 <div class = "contenu-carrousel-centre">
                     <?php require_once("./vue/logo.php"); ?>
                     <div class = "sous-titre-contenu titre"><?php echo SOUS_TITRE_ACCUEIL; ?></div>
-                    <div id='commencer-visite' class = 'boutton-carrousel contenu'><?php echo COMMENCER_VISITE;?></div>
-                </div>
+                    <div id='commencer-visite' class = 'boutton-carrousel contenu' onClick = "defileDroite(0)"><?php echo COMMENCER_VISITE;?></div>
+                    </div>
                 <i class = "fa fa-arrow-right defilement-carrousel carrousel-droite " onClick="defileDroite(0)"></i>
             </div>
         </div>
@@ -38,7 +38,7 @@ require_once("./lang/EN-en.php");
                 <div class = "contenu-carrousel-centre">
                     <div class = "titre-contenu titre"><?php echo SLIDE_DEUX_TITRE; ?></div>
                     <div class = "sous-titre-contenu titre"><?php echo SLIDE_DEUX_TEXTE; ?></div>
-                    <div id='commencer-visite' class = 'boutton-carrousel contenu'><?php echo SLIDE_DEUX_BOUTON;?></div>
+                    <a  class = 'boutton-carrousel contenu' href = "./index?action=vieDuQuartier"><?php echo SLIDE_DEUX_BOUTON;?></a>
                 </div>
                 <i class = "fa fa-arrow-right defilement-carrousel carrousel-droite " onClick="defileDroite(1)"></i>
                 </div>
@@ -50,7 +50,7 @@ require_once("./lang/EN-en.php");
                 <div class = "contenu-carrousel-centre">
                     <div class = "titre-contenu titre"><?php echo SLIDE_TROIS_TITRE; ?></div>
                     <div class = "sous-titre-contenu titre"><?php echo SLIDE_TROIS_TEXTE; ?></div>
-                    <div id='commencer-visite' class = 'boutton-carrousel contenu'><?php echo SLIDE_TROIS_BOUTON;?></div>
+                    <a class = 'boutton-carrousel contenu' href = "./index.php?action=incontournables"><?php echo SLIDE_TROIS_BOUTON;?></a>
                 </div>
                 <i class = "fa fa-arrow-right defilement-carrousel carrousel-droite " onClick="defileDroite(2)"></i>
             </div>
@@ -62,7 +62,7 @@ require_once("./lang/EN-en.php");
                 <div class = "contenu-carrousel-centre">
                     <div class = "titre-contenu titre"><?php echo SLIDE_QUATRE_TITRE; ?></div>
                     <div class = "sous-titre-contenu titre"><?php echo SLIDE_QUATRE_TEXTE; ?></div>
-                    <div id='commencer-visite' class = 'boutton-carrousel contenu'><?php echo SLIDE_QUATRE_BOUTON;?></div>
+                    <a id='commencer-visite' class = 'boutton-carrousel contenu' href="./index.php?action=culture"><?php echo SLIDE_QUATRE_BOUTON;?></a>
                 </div>
                 <i class = "fa fa-arrow-right defilement-carrousel carrousel-droite " onClick="defileDroite(3)"></i>
             </div>

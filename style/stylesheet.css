@@ -215,6 +215,47 @@ p{
 /*------------------------------
 Vue lieux culturels
  */
+
+.article_contenu{
+    width: 80%;
+    margin: 0 auto;
+    color:white;
+}
+
+.article_body{
+    margin-top:10px;
+
+    transform: translateY(30px);
+    filter:blur(2px);
+    opacity: 0;
+    transition:transform 1s ease-in-out 2s, filter 1s 2s, opacity 1s 2s;  
+}
+
+.calque:hover .article_body{
+    transform: translateY(0px);
+    filter:blur(0);
+    opacity: 1
+}
+
+.article_title{
+    width: 80%;
+    margin: 0 auto 20px;
+    font-size: 1.55em;
+    transform: scaleY(0);
+    transform-origin: 50% 0;
+    transition:transform .5s ease-in-out 1s;  
+}
+
+.calque:hover .article_title{
+    transform: scaleY(1);
+}
+
+.contenu-flex{
+    display:flex;
+    align-items: center;
+    min-height: 100%;
+}
+
 .image-fond{
     position: fixed;
     filter: blur(5px) brightness(28%);
@@ -234,61 +275,66 @@ Vue lieux culturels
     width: 80%;
     margin: 0 auto;
 }
+
+
+.galerie-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}
+
 .flex-container {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
 }
-.flex-container .box_lieux{
-    position:relative;
-    text-align: center;
-    line-height: 75px;
-    margin: 2px;
-    font-size: 30px;
+
+
+.lieux{
+    width:45%;
+    height:45%;
+    position:relative; 
+    margin: 1%;
+
 }
-.lieux1{
-    width: 49%;
-}
-.lieux2{
-    width: 50%;
-}
-.lieux3{
-    width: 100%;
-}
+
 .images_culturelles{
-    width:100%;
-    display:block;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 10px 2px;
+    box-shadow: black 0px 12px 30px;
 }
 .calque{
     position:absolute;
     width: 100%;
+    height:100% ;
     z-index: 1;
     background-color: 	rgba(26, 0, 6, 0.5);
     text-align: center;
     display: block;
     opacity: 0;
 }
-.img_box1, .calque_box1{
-    height: 50%;
-}
 
-.img_box2,.calque_box2{
-    height: 70%;
-}
-
-.img_box3,.calque_box3{
-     height: 30%;
- }
-
-.img_box4,.calque_box4{
-    height: 100%;
-}
 .calque:hover{
-    animation: fadeIn 1s ease-in;
+    animation: fadeIn .5s ease-in;
     animation-fill-mode: forwards;
 }
 
+.separateur{
+    border:solid 1px; 
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition:transform .8s ease-out 1s;  
+}
 
+.calque:hover .separateur{
+    transform: scaleX(1);
+}
+
+
+
+/*MENU*/ 
 .inn_navbar{
     background-color: inherit;
 }

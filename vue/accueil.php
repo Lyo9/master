@@ -69,7 +69,36 @@ require_once("./lang/EN-en.php");
         </div>
     </div> 
 
+
 </div>
+
+<div class = "contenu-hors-carrousel">
+    <div class = "map-container">
+        <div class = "map" id = "map">
+            Placer la map ici
+            <script>
+              function initMap() {
+                var uluru = {lat: 45.780426, lng: 4.805059};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 14,
+                  center: uluru
+                });
+                var marker = new google.maps.Marker({
+                  position: uluru,
+                  map: map
+                });
+              }
+            </script>
+            <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAI0Lj-V2CL0k77wK_EyyATp4SCDUmenf8&callback=initMap">
+            </script>
+        </div>
+    </div>
+    <div class = "texte-presentation contenu">
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    </div>
+</div>
+
 <?php 
 
 //Lister deux ou trois articles

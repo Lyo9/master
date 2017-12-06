@@ -6,6 +6,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu|Vollkorn" rel="stylesheet">
 	<link rel="stylesheet" href="./style/font-awesome/css/font-awesome.min.css">
 	<script src="./javascript/carrousel.js"></script>
+	<meta name="viewport">
 	<title>Lyon 9</title>
 </head>
 <body>

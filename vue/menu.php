@@ -4,10 +4,10 @@
 <div class="navbar" id="navbar">
     <a class="btn-simple" href="./index.php">Accueil</a>
     <div class="dropdown">
-        <button class="dropbtn">Histoire et vie du quartier
+        <button class="dropbtn titre">Histoire et vie du quartier
             <i class="fa fa-caret-down"></i>
         </button>
-        <div class="dropdown-content" style="gray">
+        <div class="dropdown-content titre" style="gray">
             <a href="#">Histoire</a>
             <a href="#">Liens</a>
             <a href="#">Education</a>
@@ -17,20 +17,20 @@
         </div>
     </div>
     <div class="dropdown">
-        <button class="dropbtn">Incontournable
+        <button class="dropbtn titre">Incontournable
             <i class="fa fa-caret-down"></i>
         </button>
-        <div class="dropdown-content">
+        <div class="dropdown-content titre">
             <a href="#">Galerie</a>
             <a href="#">Bon plan</a>
         </div>
 
     </div>
     <div class="dropdown">
-        <button  class="dropbtn"><a href = "./index.php?action=culture">Culture Sport & loisirs</a>
+        <button  class="dropbtn titre"><a href = "./index.php?action=culture">Culture Sport & loisirs</a>
             <i class="fa fa-caret-down"></i>
         </button>
-        <div class="dropdown-content">
+        <div class="dropdown-content " >
             <a href="./index.php?action=culture&sousMenu=lieuxCulturels">Lieux culturels</a>
             <a href="#">Lieux sportif</a>
             <a href="#">Infranstructure</a>

@@ -3,7 +3,8 @@ a{
 }
 
 body{
-    margin:0; 
+    margin:0;
+    background-color: #714900;
 }
 
 .menu_link{
@@ -247,4 +248,64 @@ Style de la barre de navigation
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+/*------------------------------
+Vue lieux culturels
+ */
+.mon-container{
+    width: 80%;
+    margin: 0 auto;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.flex-container .box_lieux{
+    position:relative;
+    text-align: center;
+    line-height: 75px;
+    margin: 2px;
+    font-size: 30px;
+}
+.lieux1{
+    width: 49%;
+}
+.lieux2{
+    width: 50%;
+}
+.lieux3{
+    width: 100%;
+}
+.images_culturelles{
+    width:100%;
+    display:block;
+}
+.calque{
+    position:absolute;
+    width: 100%;
+    z-index: 1;
+    background-color: 	rgba(26, 0, 6, 0.5);
+    text-align: center;
+    display: block;
+    opacity: 0;
+}
+.img_box1, .calque_box1{
+    height: 50%;
+}
+
+.img_box2,.calque_box2{
+    height: 70%;
+}
+
+.img_box3,.calque_box3{
+     height: 30%;
+ }
+
+.img_box4,.calque_box4{
+    height: 100%;
+}
+.calque:hover{
+    animation: fadeIn 1s ease-in;
+    animation-fill-mode: forwards;
 }

@@ -6,7 +6,7 @@
         <button class="dropbtn">Histoire et vie du quartier
             <i class="fa fa-caret-down"></i>
         </button>
-        <div class="dropdown-content">
+        <div class="dropdown-content" style="gray">
             <a href="#">Histoire</a>
             <a href="#">Liens</a>
             <a href="#">Education</a>
@@ -30,7 +30,7 @@
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-            <a href="#">Lieux culturels</a>
+            <a href="vue/lieux_culturels.php">Lieux culturels</a>
             <a href="#">Lieux sportif</a>
             <a href="#">Infranstructure</a>
 

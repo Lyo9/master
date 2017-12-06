@@ -315,6 +315,11 @@ Vue lieux culturels
     border-radius:4px;
 }
 
+.country-flag{
+    width: 2%;
+    margin-bottom: -9px;
+}
+
 
 .dropbtn {
     background-color:inherit;

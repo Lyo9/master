@@ -70,7 +70,7 @@ p{
 }
 
 .contenu-accueil{
-    z-index: 2;
+    z-index: 1;
     color: white;
     display: flex;
     width:100%; 
@@ -338,26 +338,33 @@ Vue lieux culturels
 }
 
 .dropdown-content {
-    display: none;
     position: absolute;
     right: 0;
     background-color: rgba(158, 158, 158, 0.486);
     min-width: 100%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 2;
+
+}
+
+.dropdown-content, .dropdown-content a{
+    transform: scaleY(0);
+    transform-origin: 50% 0;
+    transition:transform .8s ease-in-out;
 }
 
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
-    display: block;
+    display:block; 
 }
 
 .dropdown-content a:hover {background-color: inherit}
 
-.dropdown:hover .dropdown-content {
-    display: block;
+.dropdown:hover .dropdown-content , .dropdown:hover .dropdown-content a{
+    transform: scaleY(1);    
+    display:block; 
 }
 
 

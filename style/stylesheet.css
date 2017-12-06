@@ -453,6 +453,7 @@ ul{
 }
 .flex-footer h3{
     font-size: 17px;
+
 }
 .footer_last_section{
 margin: 10px;
@@ -508,7 +509,7 @@ padding: 5px;
 }
 .mairie9eme{
     width: 100%;
-    height: 35%
+    height: 100%
 }
 .desc-img-mairie, .desc-img-mairie a{
     color: white;
@@ -518,7 +519,4 @@ padding: 5px;
 }
 a{
     text-decoration: none;
-}
-body{
-    background-color: white;
 }

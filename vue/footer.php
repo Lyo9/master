@@ -4,35 +4,30 @@
 <div class="flex-container flex-footer" >
     <div class="footer-nav-content">
         <div class="dropdown">
-            <a href="../index.php"> <button class="dropbtn titre footer-button-center">Accueil
+            <a href="./index.php"> <button class="dropbtn titre footer-button-center">Accueil
                 <i class="fa fa-caret-down"></i></a>
             </button>
         </div>
 
         <div class="dropdown">
-            <a href="../index.php"><button class="dropbtn titre footer-button-center">Histoire et vie du quartier
+            <a href="./index.php"><button class="dropbtn titre footer-button-center">Histoire et vie du quartier
                 </button></a>
         </div>
 
         <div class="dropdown">
-            <a href="../index.php"><button class="dropbtn titre footer-button-center">Incontournable
+            <a href="./index.php"><button class="dropbtn titre footer-button-center">Incontournable
                 </button></a>
         </div>
 
         <div class="dropdown">
-            <a href="../index.php"><button class="dropbtn titre footer-button-center">Culture Sport & loisirs
+            <a href="./index.php?action=culture"><button class="dropbtn titre footer-button-center">Culture Sport & loisirs
                 <i class="fa fa-caret-down"></i>
-                </button></a>
-        </div>
-
-        <div class="dropdown">
-            <a href="../index.php"><button class="dropbtn titre footer-button-center">Lieux culturels
                 </button></a>
         </div>
     </div>
     <div class="footer_section">
         <div class="footer-section-logo">
-            <center><img class="logo-footer" src="../ressources/logo.png" alt="lyon9"></center>
+            <center><img class="logo-footer" src="./ressources/logo.png" alt="lyon9"></center>
         </div>
     </div>
     <div class="footer_section">
@@ -53,13 +48,14 @@
 
     <div class="footer-section-essentiel mairie">
            <div class="img-mairie">
-                <img class="mairie9eme" src="../ressources/images/mairie9eme.JPG">
+                <img class="mairie9eme" src="./ressources/images/mairie9eme.JPG">
+
             </div>
             <div class="desc-img-mairie">
                 <h3>La Mairie du 9e arrondissement</h3>
                 <span><i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>&nbsp&nbsp&nbsp&nbsp 6 place du Marché 69009 Lyon</span></br>
                 <span><i class="fa fa-phone fa-2x" aria-hidden="true"></i>&nbsp +33 4 72 19 81 81</span><br>
-                <span><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>&nbsp <a href = '../index.php?action=leavefeedback'>Ecrivez-nous</a></span>
+                <span><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>&nbsp <a href = './index.php?action=leavefeedback'>Ecrivez-nous</a></span>
             </div>
 
     </div>

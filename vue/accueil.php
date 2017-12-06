@@ -23,7 +23,7 @@ require_once("./lang/EN-en.php");
             <div class = "contenu-accueil">
                 <i class = "fa fa-arrow-left defilement-carrousel carrousel-gauche" onClick="defileGauche(0)"></i>
                 <div class = "contenu-carrousel-centre">
-                    <div class = "titre-contenu titre">Lyon 9</div>
+                    <?php require_once("./vue/logo.php"); ?>
                     <div class = "sous-titre-contenu titre"><?php echo SOUS_TITRE_ACCUEIL; ?></div>
                     <div id='commencer-visite' class = 'boutton-carrousel contenu'><?php echo COMMENCER_VISITE;?></div>
                 </div>

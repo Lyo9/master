@@ -25,6 +25,8 @@ p{
 
 
 
+
+
 /*Accueil*/ 
 
 .boutton-carrousel{
@@ -143,7 +145,7 @@ p{
 
 
 .logoPrincipal{
-    width:10%; 
+    width:100%; 
 }
 
 .logoPrincipal img{

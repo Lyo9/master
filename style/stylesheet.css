@@ -568,6 +568,14 @@ _______________________________________ */
 }
 
 
+.admin-form-conteneur{
+    background: white;
+    margin: 4vh 2vw;
+    border-radius: 50px;
+    padding: 1vh 1vw;
+    box-shadow: 5px 5px 50px black, -5px -5px 50px black, -5px 5px 50px black, 5px -5px 50px black;
+}
+
 
 
 

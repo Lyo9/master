@@ -30,12 +30,22 @@ define("SOUS_TITRE_ACCUEIL","De la tradition à l'innovation");
 define("TEXTE_PRESENTATION_CONTENU","Le neuvième arrondissement de la ville de Lyon est en pleine expansion démographique. Situé sur la partie Ouest de la ville il propose des centaines d'activités sportives ou culturelles ainsi que des hôtels et restaurants en tous genres. Laissez-vous tenter par son côté traditionnel si bien conservé au fil du temps, ou au contraire par son dynamisme et sa forte activité. C'est l'occasion de découvrir de nouveaux passe-temps en famille ou entre amis. ");
 
 
+//Histoire et vie du quartier
+define("HISTOIRE_ET_VIE_DU_QUARTIER","Histoire et vie du quartier Lyon 9");
+
+
+
+//Incontournables
+define("INCONTOURNABLES","Les Incontournables");
+
 
 
 //Culture 
 
 define("LIEUX_CULTURELS","La culture à Lyon 9");
 define("LIEUX_SPORTIFS","Le sport à Lyon 9");
+
+
 
 
 //Feedback 

@@ -28,12 +28,12 @@ if(isset($_SESSION['langue']))
     {
     	$route = "./index.php?langue=en".$page;
 
-        echo '<a href = "'.$route.'"><img class = "country-flag" src = "./ressources/drapeauangleterre.png" alt = "Drapeau anglais"></img></a>'; 
+        echo '<a href = "'.$route.'"><img class = "country-flag" src = "./ressources/drapeaufrance.png" alt = "Drapeau anglais"></img></a>'; 
     }
     else if($langue == "en")
     {
     	$route = "./index.php?langue=fr".$page;
-        echo '<a href = "'.$route.'"><img class = "country-flag" src = "./ressources/drapeaufrance.png" alt = "Drapeau français"></img></a>'; 
+        echo '<a href = "'.$route.'"><img class = "country-flag" src = "./ressources/drapeauangleterre.png" alt = "Drapeau français"></img></a>'; 
     }
 }
 

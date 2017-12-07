@@ -6,11 +6,10 @@
 <body>
 <?php
 try{
-$base = new PDO('mysql:host=127.0.0.1;dbname=lyon9corp','root','');
+$base = new PDO('mysql:host=127.0.0.1;dbname=lyo9corp','root','');
 $base->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-echo "Connexion ok.";
-
 ?>
+
 <p><a href="testp2.html">  retour au site </a></p>
 
 <form method="post" action="#">
@@ -48,17 +47,18 @@ echo "Connexion ok.";
     <br>
 
        <label for="Contenu">Contenu : </label>
-       <input type="textarea" name="Contenu" id="Contenu" />
+      <textarea name="Contenu" id="Contenu"> </textarea>
  <br>
   <label for="Contenu">Contenu Anglais: </label>
-       <input type="textarea" name="ContenuA" id="ContenuA" />
+
+       <textarea name="ContenuA" id="ContenuA"> </textarea>
  <br>
        <label for="Image">Image : </label>
        <input type="text" name="Image" id="Image" />
-       <input type="checkbox" name="Evenement">Evenement
+       <input type="checkbox" name="Evenement" calss="Evenement" onchange="affiche()">Evenement
    </fieldset>
  
-   <fieldset class="Event">
+   <fieldset class="Event" style="display:none">
        <legend>Evenement</legend> <!-- Titre du fieldset -->
 
        <br>
@@ -84,6 +84,14 @@ echo "Connexion ok.";
     </form>
 
     <?php 
+if (isset($_POST['id'])) {
+
+$sql="DELETE FROM article WHERE article_id=:id";
+$result = $base->prepare($sql);
+$result->execute(array('id' => $_POST['id']));
+
+ echo "l'article à bien été supprimé";
+}
    
    $articleValide=false;
    $Event=NULL;
@@ -190,7 +198,9 @@ echo " Article créé. ";
 <h1>ARTICLES EXISTANTS</h1>
 <?php
 
-$articles = $base->query('SELECT article.article_titre AS Titre,
+$articles = $base->query('SELECT 
+article.article_id AS Id,
+article.article_titre AS Titre,
 categorie.description AS Categorie,
 article.description AS Contenue,
 article.image AS Image,
@@ -204,6 +214,8 @@ FROM `article` LEFT JOIN categorie ON article.article_categorie=categorie.id LEF
 
 while($article = $articles->fetch()){
 
+
+
   echo 'Titre:'.$article['Titre']."<br>".$article['Categorie']."<br>".$article['Contenue']."<br>".$article['Image']."<br>";
   
   if($article["Event"]!=''){
@@ -215,10 +227,28 @@ $dateFin = date_create_from_format('d/M/Y:H:i:s', $article['DateFin']);
       echo "Date Evenement du ".substr($article['DateDebut'],2,9)." au ".substr($article['DateFin'],2,9)."<br> Heure Evenement de ".substr($article['DateDebut'],-8,5)." à ".substr($article['DateFin'],-8,5);
 
   }//fin de test si un event est lié à l'article
+?>
+
+<form method="post" action="#"> 
+  <input type="hidden" name="id" value="<?php echo $article['Id']?>">
+  <input type="submit" value="Supprimer" />
+</form>
+
+<form method="post" action="tests2.php"> 
+  <input type="hidden" name="id" value="<?php echo $article['Id']?>">
+  <input type="submit" value="Modifier" />
+</form>
+<?php
+
+
 echo "<br><br>";
+
+
 }//fin d'affichage des articles
 
+
 }// fin try
+
 catch(Exception $e){
   die('Erreur :'.$e->getMessage());
 }
@@ -228,4 +258,17 @@ catch(Exception $e){
 
 </body>
 </html>
-      
+
+<script>
+    function affiche() {
+                var etat=document.getElementsByTagName('fieldset')[0].children[19].checked; 
+                if(etat==true)
+                {
+                    document.getElementsByClassName('Event')[0].style.display='block';
+                }else{
+                    document.getElementsByClassName('Event')[0].style.display='none';
+                }
+
+
+    }
+</script>

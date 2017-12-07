@@ -1,3 +1,17 @@
+<?php
+
+session_start();
+
+if(!isset($_SESSION['langue']))
+{
+	echo "<div class = 'test'>Hey ! Il n'y a pas de langue ! </div>"; 
+}
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html>
 <head>

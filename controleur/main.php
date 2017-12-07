@@ -19,11 +19,13 @@ require_once("./modele/articles.php");
 
 //Traitement des données 
 
+
+
 //S'il n'y a aucune langue sélectionnée
 if(!isset($_SESSION['langue']))
 {
     //On règle la langue sur français
-    $_SESSION['langue']="fr"; 
+    $_SESSION['langue']="fr";
 }
 
 //On vérifie s'il y a une modification des langues 

@@ -11,28 +11,28 @@ define("COMMENCER_VISITE","Start tour");
 define("FEEDBACK_HEADER","Leave a comment !"); 
 define("MESSAGE_D_ACCUEIL","Welcome on Lyon 9 website ! Start your tour ! "); 
 
-define("SLIDE_DEUX_BOUTON","An intense and active neighborhood"); 
+define("SLIDE_DEUX_BOUTON","Discover the district activity"); 
 define("SLIDE_DEUX_TEXTE","An intense and active neighborhood"); 
 define("SLIDE_DEUX_TITRE","Live this place"); 
 
-define("SLIDE_TROIS_BOUTON","Neighorhood's places"); 
+define("SLIDE_TROIS_BOUTON","Neighorhood's spots"); 
 define("SLIDE_TROIS_TEXTE","... and its must-sees not to be missed"); 
-define("SLIDE_TROIS_TITRE","Discover new places"); 
+define("SLIDE_TROIS_TITRE","Discover new spots"); 
 
-define("SLIDE_QUATRE_BOUTON","Story of the district"); 
+define("SLIDE_QUATRE_BOUTON","History of the district"); 
 define("SLIDE_QUATRE_TEXTE","A dynamic district"); 
 define("SLIDE_QUATRE_TITRE","Live the neighborhood"); 
 
 
 define("SOUS_TITRE_ACCUEIL","From tradition to innovation"); 
 
-define("TEXTE_PRESENTATION_CONTENU","The 9th district of Lyon is in a fully demographic expansion. Located on the Eastern side of the city, it provides a lot of cultural and sporty activites as well as varied hotels and restaurants. You can appreciate its traditionnal aspect so well conserved by the time, unless your main goal is seing the dynamism and strong activity of the neighborhood ! C'est l'occasion de découvrir de nouveaux passe-temps en famille ou entre amis. ");
+define("TEXTE_PRESENTATION_CONTENU","The 9th district of Lyon is in a fully demographic expansion. Located on the Eastern side of the city, it provides a lot of cultural and sportive activities as well as varied hotels and restaurants. You can appreciate its traditionnal aspect well conserved by time, unless your main goal is seeing the dynamism and strong activity of the neighborhood. A perfect opportunity to discover new hobbies and share with friends or familly !");
 
 
 
 
 //Histoire et vie du quartier
-define("HISTOIRE","Story of Lyon 9");
+define("HISTOIRE","History of Lyon 9");
 
 
 //Incontournables

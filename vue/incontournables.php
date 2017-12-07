@@ -157,7 +157,7 @@
 <?php
  }
 
-if(isset($_GET['sousMenu']) and $_GET['sousMenu']=="lieuxSportifs"){
+if(isset($_GET['sousMenu']) and $_GET['sousMenu']=="bonplan"){
      ?>
     <script>
         function Scrolldown() {

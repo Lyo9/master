@@ -160,6 +160,14 @@ p{
     width:100%; 
 }
 
+.minilogo{
+    width:10%;
+}
+
+.minilogo img{
+    width:100%;
+}
+
 
 #map{
     text-align:center;

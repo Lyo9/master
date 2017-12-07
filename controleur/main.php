@@ -10,7 +10,7 @@
 
 //Connection à la base de données
 
-require_once('./modele/ConnexionSql.php'); 
+require_once('./modele/ConnexionSql.php');
 
 
 //Récupération du modèle d'articles 

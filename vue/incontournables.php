@@ -230,13 +230,17 @@
 
         </div>
 
+    <div class="mon-container">
+            <!-- LIEUX CULTURELS-->
+        <?php  
+        require_once("./vue/afficheCategorie.php");
+        ?>
     </div>
-
-
 
 
 </div>
 */
+
 
  if(isset($_GET['sousMenu']) and $_GET['sousMenu']=="lieuxCulturels"){
      ?>

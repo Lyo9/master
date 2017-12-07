@@ -31,18 +31,25 @@ define("TEXTE_PRESENTATION_CONTENU","Le neuvième arrondissement de la ville de 
 
 
 //Histoire et vie du quartier
-define("HISTOIRE_ET_VIE_DU_QUARTIER","Histoire et vie du quartier Lyon 9");
+define("EDUCATION","Education");
+define("ENVIRONNEMENT","Environnement");
+define("HISTOIRE","Histoire du quartier Lyon 9");
+define("INDUSTRIE", "Industrie"); 
+define("INFOS","Infos pratiques");
+define("LIENS","Liens utiles");
 
 
 
 //Incontournables
+define ("BONS_PLANS","Bons plans"); 
+define ("GALERIE","Galerie"); 
 define("INCONTOURNABLES","Les Incontournables");
 define("BON_PLAN","Les Bons Plans");
 define("GALERIE","Galerie d'image");
 
 
 //Culture 
-
+define("INFRASTRUCTURES","Infrastructures");
 define("LIEUX_CULTURELS","La culture à Lyon 9");
 define("LIEUX_SPORTIFS","Le sport à Lyon 9");
 

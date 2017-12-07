@@ -21,7 +21,7 @@
                                 <div class = "contenu-flex">
                                     <div class = "article_contenu">
                                         <div class = "article_title">
-                                            <?php echo ($_SESSION['langue'] == 'en'? $article['article_titre_anglais']:$article['article_titre']);;?>
+                                            <?php echo ($_SESSION['langue'] == 'en'? $article['titre_anglais']:$article['article_titre']);;?>
                                         </div>
                                         <div class = "separateur"></div>
                                         <div class = "article_metro_access">
@@ -30,7 +30,7 @@
                                         <div class = "article_body">
                                             <?php 
                                             //Affiche la description dans la langue correspondante à la valeur session  
-                                            echo ($_SESSION['langue'] == 'en'? $article['Description_anglais']:$article['Description_france']);?>
+                                            echo ($_SESSION['langue'] == 'en'? $article['description_anglais']:$article['description']);?>
                                         </div>
                                     </div>
                                 </div>
@@ -44,6 +44,7 @@
 
 
             </div>
+        </div>
             <?php
         }
 ?>

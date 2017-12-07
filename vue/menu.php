@@ -21,8 +21,8 @@
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content titre">
-            <a href="./index.php?action=incontournables&sousMenu=galerie">Galerie</a>
             <a href="./index.php?action=incontournables&sousMenu=bonplan">Bon plan</a>
+            <a href="./index.php?action=incontournables&sousMenu=galerie">Galerie</a>
         </div>
 
     </div>

@@ -44,7 +44,8 @@ define("LIENS","Liens utiles");
 define ("BONS_PLANS","Bons plans"); 
 define ("GALERIE","Galerie"); 
 define("INCONTOURNABLES","Les Incontournables");
-
+define("BON_PLAN","Les Bons Plans");
+define("GALERIE","Galerie d'image");
 
 
 //Culture 

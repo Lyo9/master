@@ -32,7 +32,7 @@ define("TEXTE_PRESENTATION_CONTENU","The 9th district of Lyon is in a fully demo
 
 
 //Histoire et vie du quartier
-define("HISTOIRE_ET_VIE_DU_QUARTIER","Story and life in Lyon 9");
+define("HISTOIRE","Story of Lyon 9");
 
 
 //Incontournables

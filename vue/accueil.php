@@ -116,6 +116,7 @@ require_once("./lang/EN-en.php");
         echo "<div class = 'article'> ".$article['article_titre']."</div>"; 
     }
 }*/
-
 ?>
-
+<script>
+        document.getElementsByClassName('accueil')[0].classList.add("active");
+</script>

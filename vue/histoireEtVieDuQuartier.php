@@ -148,3 +148,7 @@ if(isset($_GET['sousMenu']) and $_GET['sousMenu']=="education"){
 }
 
 ?>
+<script>
+    document.getElementsByClassName('histoire-vie')[0].classList.add("active");
+</script>
+

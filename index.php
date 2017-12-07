@@ -24,7 +24,8 @@ if(!isset($_SESSION['langue']))
 	<title>Lyon 9</title>
 </head>
 <body>
-<?php require_once("./controleur/main.php"); ?>
+<?php require_once("./controleur/main.php");?>
 
 </body>
 </html>
+

@@ -25,7 +25,7 @@ function getArticlesByCategorie($categorie){
 
     $query = "Select * from article WHERE article_categorie =".$categorie.";"; 
 
-    $results = $bdd->query($query); 
+    $results = $bdd->query($query);
 
     //$data = $results->fetch();
     

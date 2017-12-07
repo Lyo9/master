@@ -152,3 +152,7 @@ if(isset($_GET['sousMenu']) and $_GET['sousMenu']=="bonplan"){
 }
 */ 
 ?>
+    <script>
+        document.getElementsByClassName('incontournables')[0].classList.add("active");
+    </script>
+

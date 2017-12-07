@@ -162,7 +162,6 @@ if(isset($_GET['action']))
 $listeArticles = getArticlesByCategorie($categorie);
 
 
-
 //Appel des vues 
 require_once("vue/menu.php");
 require_once($contenu);

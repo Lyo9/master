@@ -1,24 +1,23 @@
 <link rel="stylesheet" href="./style/stylesheet.css"/>
 <link rel="stylesheet" href="./style/animations.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<div class = "culture-fond">
+<br class = "culture-fond">
 
     <img class = "image-fond" src = "./ressources/images/fond_culturel.JPG"/>
 
-    <div class="mon-container">
+    <br class="mon-container">
         <!-- LIEUX CULTURELS-->
         <div class = "titre-categorie titre">
             <?php echo LIEUX_CULTURELS;?>
         </div>
-                
         <div class = "galerie-container">
             <?php 
             if(isset($listeArticles))
             {
+
                 foreach($listeArticles as $article)
                 {
                     ?>
-
                     <div class = "lieux">
                         <div class="calque calque_box1">
                             <div class = "contenu-flex">
@@ -147,3 +146,7 @@ if(isset($_GET['sousMenu']) and $_GET['sousMenu']=="lieuxSportifs"){
 }
 
 ?>
+<script>
+    document.getElementsByClassName('sport')[0].classList.add("active");
+</script>
+

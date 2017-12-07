@@ -4,24 +4,22 @@
 <div class="flex-container flex-footer" >
     <div class="footer-nav-content">
         <div class="dropdown">
-            <a href="./index.php"> <button class="dropbtn titre footer-button-center">Accueil
-                <i class="fa fa-caret-down"></i></a>
+            <button class="dropbtn titre footer-button-center accueil"><a href="./index.php">Accueil</a>
             </button>
         </div>
 
         <div class="dropdown">
-            <a href="./index.php"><button class="dropbtn titre footer-button-center">Histoire et vie du quartier
+            <a href="./index.php?action=histoire"><button class="dropbtn titre footer-button-center">Histoire et vie du quartier
                 </button></a>
         </div>
 
         <div class="dropdown">
-            <a href="./index.php"><button class="dropbtn titre footer-button-center">Incontournable
+            <a href="./index.php?action=incontournables"><button class="dropbtn titre footer-button-center">Incontournable
                 </button></a>
         </div>
 
         <div class="dropdown">
             <a href="./index.php?action=culture"><button class="dropbtn titre footer-button-center">Culture Sport & loisirs
-                <i class="fa fa-caret-down"></i>
                 </button></a>
         </div>
     </div>

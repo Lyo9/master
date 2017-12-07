@@ -1,8 +1,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class="navbar" id="navbar">
-    <a class="btn-simple" href="./index.php">Accueil</a>
+    <button class="dropbtn titre ">
+    <a class="btn-simple accueil" href="./index.php">Accueil</a>
+    </button>
     <div class="dropdown">
-        <button class="dropbtn titre"><a href = "./index.php?action=histoire">Histoire et vie du quartier</a>
+        <button class="dropbtn titre histoire-vie"><a href = "./index.php?action=histoire">Histoire et vie du quartier</a>
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content titre">
@@ -15,7 +17,7 @@
         </div>
     </div>
     <div class="dropdown">
-        <button class="dropbtn titre"><a href = "./index.php?action=incontournables">Incontournable</a>
+        <button class="dropbtn titre incontournables"><a href = "./index.php?action=incontournables">Incontournable</a>
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content titre">
@@ -25,7 +27,7 @@
 
     </div>
     <div class="dropdown">
-        <button  class="dropbtn titre"><a href = "./index.php?action=culture">Culture Sport & loisirs</a>
+        <button  class="dropbtn titre sport"><a href = "./index.php?action=culture">Culture Sport & loisirs</a>
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content " >

@@ -37,7 +37,8 @@ define("HISTOIRE_ET_VIE_DU_QUARTIER","Histoire et vie du quartier Lyon 9");
 
 //Incontournables
 define("INCONTOURNABLES","Les Incontournables");
-
+define("BON_PLAN","Les Bons Plans");
+define("GALERIE","Galerie d'image");
 
 
 //Culture 

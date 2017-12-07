@@ -81,7 +81,6 @@ if(isset($_GET['action']))
     {
         $contenu = "./vue/lieux_culturels.php"; 
         $categorie = 2; 
-
     }
 
     //L'utilisateur a cliqué sur "Laisser un commentaire"
@@ -152,7 +151,6 @@ if(isset($_GET['action']))
         //Chargement de l'interface "Laisser un commentaire" 
         $contenu = "./vue/feedback.php"; 
     }
-
 }
 
 

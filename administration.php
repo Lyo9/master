@@ -24,7 +24,7 @@ if(isset($_POST['password']) && $_POST['password'] == $motDePasse)
   $base->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
   ?>
 
-  <?php require_once("./vue/minilogo.php");?>
+  <?php require_once("./vue/logo_link.php");?>
 
   <form method="post" action="#">
   <h1>CREER UN ARTICLE </h1>

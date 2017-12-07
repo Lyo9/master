@@ -39,7 +39,14 @@ p{
     font-size:  15px;
 }
 
+.logo-link{
+    width:10%;
+}
 
+
+.logo-link img{
+    width:100%;
+}
 
 /*Accueil*/ 
 

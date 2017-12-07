@@ -438,6 +438,8 @@ Vue lieux culturels
     margin: 1px;
     background-color: #333333;
     justify-content: center;
+    position:absolute;
+    bottom:0;
 
 }
 .footer-nav-content{

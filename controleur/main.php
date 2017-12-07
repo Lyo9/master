@@ -10,7 +10,7 @@
 
 //Connection à la base de données
 
-require_once('./modele/ConnexionSql.php'); 
+require_once('./modele/ConnexionSql.php');
 
 
 //Récupération du modèle d'articles 
@@ -95,6 +95,7 @@ if(isset($_GET['action']))
             $message = ERREUR_MAIL_INVALIDE; 
             array_push($messageErreurs,$message); 
         }
+
 
         //Adresse mail invalide 
         /*if(preg_match($pattern, $mail))

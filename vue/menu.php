@@ -2,25 +2,25 @@
 <div class="navbar" id="navbar">
     <a class="btn-simple" href="./index.php">Accueil</a>
     <div class="dropdown">
-        <button class="dropbtn titre">Histoire et vie du quartier
-            <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content titre" style="gray">
-            <a href="#">Histoire</a>
-            <a href="#">Liens</a>
-            <a href="#">Education</a>
-            <a href="#">Infos</a>
-            <a href="#">Industrie</a>
-            <a href="#">Environnement</a>
-        </div>
-    </div>
-    <div class="dropdown">
-        <button class="dropbtn titre">Incontournable
+        <button class="dropbtn titre"><a href = "./index.php?action=histoire">Histoire et vie du quartier</a>
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content titre">
-            <a href="#">Galerie</a>
-            <a href="#">Bon plan</a>
+            <a href="./index.php?action=histoire">Histoire</a>
+            <a href="./index.php?action=histoire&sousMenu=liens">Liens</a>
+            <a href="./index.php?action=histoire&sousMenu=education">Education</a>
+            <a href="./index.php?action=histoire&sousMenu=infos">Infos</a>
+            <a href="./index.php?action=histoire&sousMenu=industrie">Industrie</a>
+            <a href="./index.php?action=histoire&sousMenu=environnement">Environnement</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn titre"><a href = "./index.php?action=incontournables">Incontournable</a>
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content titre">
+            <a href="./index.php?action=incontournables&sousMenu=galerie">Galerie</a>
+            <a href="./index.php?action=incontournables&sousMenu=bonplan">Bon plan</a>
         </div>
 
     </div>
@@ -31,7 +31,7 @@
         <div class="dropdown-content " >
             <a href="./index.php?action=culture&sousMenu=lieuxCulturels">Lieux culturels</a>
             <a href="./index.php?action=culture&sousMenu=lieuxSportifs">Lieux sportif</a>
-            <a href="#">Infranstructure</a>
+            <a href="#">Infrastructures</a>
         </div>
 
     </div>

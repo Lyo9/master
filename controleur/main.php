@@ -61,6 +61,18 @@ if(isset($_GET['action']))
 
     $action = $_GET['action']; 
 
+    //L'utilisateur a choisi un lien du menu "Vie du quartier et hisoitre"
+    if($action == 'histoire')
+    {
+        $contenu = "./vue/histoireEtVieDuQuartier.php";
+    }
+
+    //L'utilisateur a choisi un lien du menu "Vie du quartier et hisoitre"
+    if($action == 'incontournables')
+    {
+        $contenu = "./vue/incontournables.php";
+    }
+
     //L'utilisateur a choisi un lien du menu culture 
     if($action == "culture")
     {

@@ -11,8 +11,11 @@ if(isset($_SESSION['langue']))
 {
     $langue = $_SESSION['langue']; 
 
+
+    //Si l'utilisateur est déjà sur une page en particulier
     if(isset($_GET['action']))
     {
+    	//On récupère sa page et on le renvoie dessus 
     	$page = "&action=".$_GET['action']; 
     }
     else
@@ -20,7 +23,7 @@ if(isset($_SESSION['langue']))
     	$page = "";
     }
 
-
+    //On analyse la valeur de la langue envoyée en get
     if($langue == "fr")
     {
     	$route = "./index.php?langue=en".$page;

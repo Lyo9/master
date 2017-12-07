@@ -19,6 +19,19 @@ require_once("ConnexionSql.php");
     return $results; 
 }*/
 
+//Sélectionner tous les articles en fonction de la catégorie
+function getArticlesByCategorie($categorie){
+    global $bdd; 
+
+    $query = "Select * from article WHERE article_categorie =".$categorie.";"; 
+
+    $results = $bdd->query($query); 
+
+    //$data = $results->fetch();
+    
+    return $results; 
+}
+
 
 //Sélectionner tous les articles confondus
 function getArticles(){

@@ -19,9 +19,9 @@ define("SLIDE_TROIS_BOUTON","Neighorhood's places");
 define("SLIDE_TROIS_TEXTE","... and its must-sees not to be missed"); 
 define("SLIDE_TROIS_TITRE","Discover new places"); 
 
-define("SLIDE_QUATRE_BOUTON","Histoire et vie du quartier"); 
-define("SLIDE_QUATRE_TEXTE","Un quartier en pleine activité"); 
-define("SLIDE_QUATRE_TITRE","Vivez le quartier"); 
+define("SLIDE_QUATRE_BOUTON","Story of the district"); 
+define("SLIDE_QUATRE_TEXTE","A dynamic district"); 
+define("SLIDE_QUATRE_TITRE","Live the neighborhood"); 
 
 
 define("SOUS_TITRE_ACCUEIL","From tradition to innovation"); 
@@ -44,6 +44,7 @@ define("INCONTOURNABLES","Must see places");
 //Culture 
 
 define("LIEUX_CULTURELS","Culture in Lyon 9"); 
+define("LIEUX_SPORTIFS","Sports in Lyon 9");
 
 
 

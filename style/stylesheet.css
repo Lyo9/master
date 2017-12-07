@@ -20,6 +20,12 @@ p{
     font-family: 'Vollkorn', serif;
 }
 
+.erreur{
+    color:red;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
 
 .titre{
     font-family: 'Ubuntu', sans-serif;    
@@ -161,7 +167,7 @@ p{
 }
 
 .minilogo{
-    width:70%;
+    width:100%;
 }
 
 .minilogo a img{
@@ -571,6 +577,11 @@ _______________________________________ */
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.connexionForm> .erreur{
+    margin:10px;
+    font-size:1.2em;
 }
 
 

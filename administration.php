@@ -12,8 +12,12 @@
 
 
 <?php
+
+$motDePasse = 'lyo9corp1234'; 
+
+
 //Si l'utilisateur est connecté 
-if(isset($_POST['password']) && $_POST['password'] == 'lyo9corp1234')
+if(isset($_POST['password']) && $_POST['password'] == $motDePasse)
 {
   try{
   $base = new PDO('mysql:host=127.0.0.1;dbname=lyo9corp','root','');
@@ -267,6 +271,14 @@ if(isset($_POST['password']) && $_POST['password'] == 'lyo9corp1234')
 }
 else //Sinon on affiche l'écran de connexion 
 {
+
+  //Si l'utilisateur s'est trompé de mot de passe 
+  if(isset($_POST['password']) && $_POST['password'] != $motDePasse)
+  {
+    $erreur = "<div class = 'erreur'>Erreur, ressayez avec un autre mot de passe</div>"; 
+    $style = "border-bottom:red solid 3px"; 
+  }
+
   ?>
   <div class = "connexion-conteneur">
     <div class = "contenu-admin">
@@ -274,7 +286,8 @@ else //Sinon on affiche l'écran de connexion
       <?php require_once("./vue/minilogo.php");?>
 
       <form method="post" action="#" name = "connexionForm" class = "connexionForm">
-        <input type = "password" placeholder = "Mot de passe administrateur" name = "password"></input>
+        <input style = "<?php echo (isset($style)?$style:''); ?>" type = "password" placeholder = "Mot de passe administrateur" name = "password"></input>
+        <?php echo (isset($erreur)?$erreur:'');  ?>
         <button>Se connecter</button>
       </form>
 

@@ -44,6 +44,7 @@ define("INCONTOURNABLES","Must see places");
 //Culture 
 
 define("LIEUX_CULTURELS","Culture in Lyon 9"); 
+define("LIEUX_SPORTIFS","Sports in Lyon 9");
 
 
 

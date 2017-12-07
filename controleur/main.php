@@ -53,7 +53,7 @@ require_once("./lang/EN-en.php");
 
 //Affichage de l'accueil par défaut 
 $contenu = "./vue/accueil.php";
-
+$categorie = -1; 
 
 //L'utilisateur a cliqué sur un lien
 if(isset($_GET['action']))
@@ -65,18 +65,23 @@ if(isset($_GET['action']))
     if($action == 'histoire')
     {
         $contenu = "./vue/histoireEtVieDuQuartier.php";
+        $categorie = 0; 
     }
 
     //L'utilisateur a choisi un lien du menu "Vie du quartier et hisoitre"
     if($action == 'incontournables')
     {
         $contenu = "./vue/incontournables.php";
+        $categorie = 1; 
+
     }
 
     //L'utilisateur a choisi un lien du menu culture 
     if($action == "culture")
     {
         $contenu = "./vue/lieux_culturels.php"; 
+        $categorie = 2; 
+
     }
 
     //L'utilisateur a cliqué sur "Laisser un commentaire"
@@ -154,8 +159,7 @@ if(isset($_GET['action']))
 
 
 //Récupération des articles 
-$listeArticles = getArticles();
-
+$listeArticles = getArticlesByCategorie($categorie);
 
 
 

@@ -11,13 +11,26 @@ if(isset($_SESSION['langue']))
 {
     $langue = $_SESSION['langue']; 
 
+    if(isset($_GET['action']))
+    {
+    	$page = "&action=".$_GET['action']; 
+    }
+    else
+    {
+    	$page = "";
+    }
+
+
     if($langue == "fr")
     {
-        echo '<a href = "./index.php?langue=en"><img class = "country-flag" src = "./ressources/drapeauangleterre.png" alt = "Drapeau anglais"></img></a>'; 
+    	$route = "./index.php?langue=en".$page;
+
+        echo '<a href = "'.$route.'"><img class = "country-flag" src = "./ressources/drapeauangleterre.png" alt = "Drapeau anglais"></img></a>'; 
     }
     else if($langue == "en")
     {
-        echo '<a href = "./index.php?langue=fr"><img class = "country-flag" src = "./ressources/drapeaufrance.png" alt = "Drapeau français"></img></a>'; 
+    	$route = "./index.php?langue=fr".$page;
+        echo '<a href = "'.$route.'"><img class = "country-flag" src = "./ressources/drapeaufrance.png" alt = "Drapeau français"></img></a>'; 
     }
 }
 

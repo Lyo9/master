@@ -31,7 +31,6 @@
         <div class="dropdown-content " >
             <a href="./index.php?action=culture&sousMenu=lieuxCulturels">Lieux culturels</a>
             <a href="./index.php?action=culture&sousMenu=lieuxSportifs">Lieux sportif</a>
-
             <a href="#">Infranstructure</a>
         </div>
 

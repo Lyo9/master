@@ -96,6 +96,7 @@ if(isset($_GET['action']))
             array_push($messageErreurs,$message); 
         }
 
+
         //Adresse mail invalide 
         /*if(preg_match($pattern, $mail))
         {

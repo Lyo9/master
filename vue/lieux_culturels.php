@@ -32,7 +32,6 @@
                 </div>
                 <img class="images_culturelles" src="./ressources/images/lieu_culturel1.JPG">
             </div>
-
             <div class = "lieux">
                 <div class="calque calque_box1">
                     Une petite description des familles Lieux 1

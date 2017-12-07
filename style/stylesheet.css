@@ -77,7 +77,7 @@ p{
 
 }
 
-.contenu-accueil{
+.contenu-accueil, .contenu-admin{
     z-index: 1;
     color: white;
     display: flex;
@@ -161,10 +161,10 @@ p{
 }
 
 .minilogo{
-    width:10%;
+    width:70%;
 }
 
-.minilogo img{
+.minilogo a img{
     width:100%;
 }
 
@@ -552,4 +552,49 @@ _______________________________________ */
 .active{
     background-color: #714900;
     border-radius: 5px;
+}
+
+
+
+
+
+/*ADMINISTRATEUR*/
+.connexion-conteneur{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    width: 40%;
+    margin: auto;
+} 
+
+.contenu-admin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.connexionForm > input , .connexionForm > button{
+    padding: 20px;
+    border-radius: 60px;
+    border: none;
+    width: 80%;
+    margin: 10px;
+}
+
+.connexionForm > input{
+    font-size:1.2em;
+
+}
+
+.connexionForm > button{
+    font-family: 'Ubuntu', sans-serif;    
+    background-color: #ffb945;
+    font-size: 1.2em;
+    transition : background-color, .13s ease-in;
+}
+
+.connexionForm > button:hover{
+    cursor: pointer;
+    background-color: #613c00;
 }

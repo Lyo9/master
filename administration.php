@@ -2,11 +2,16 @@
 <html>
 <head>
   <title></title>
+    <link rel="stylesheet" href="./style/stylesheet.css"/>
+
 </head>
 <body>
+
+
+<img class = "image-fond" src = "./ressources/images/fond_admin.JPG"/>
+
+
 <?php
-
-
 //Si l'utilisateur est connecté 
 if(isset($_POST['password']) && $_POST['password'] == 'lyo9corp1234')
 {
@@ -263,18 +268,23 @@ if(isset($_POST['password']) && $_POST['password'] == 'lyo9corp1234')
 else //Sinon on affiche l'écran de connexion 
 {
   ?>
-    <?php require_once("./vue/minilogo.php");?>
+  <div class = "connexion-conteneur">
+    <div class = "contenu-admin">
 
-  <form method="post" action="#" name = "connexionForm">
-    <input type = "password" placeholder = "Mot de passe" name = "password"></input>
-    <button>Se connecter</button>
-  </form>
+      <?php require_once("./vue/minilogo.php");?>
 
+      <form method="post" action="#" name = "connexionForm" class = "connexionForm">
+        <input type = "password" placeholder = "Mot de passe administrateur" name = "password"></input>
+        <button>Se connecter</button>
+      </form>
 
+    </div>
+  </div>
 
 
   <?php 
 }
+
 ?>
 
 

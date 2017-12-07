@@ -9,6 +9,6 @@
 
 echo '<div class = "logoPrincipal">
         <a href = "./index.php">
-            <img src = "./ressources/logo.png" alt = "logo"/>
+            <img src = "./ressources/images/logo_quartier_nb.png" alt = "logo"/>
         </a>
         </div> ';

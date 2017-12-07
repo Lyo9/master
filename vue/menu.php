@@ -7,8 +7,8 @@
         </button>
         <div class="dropdown-content titre">
             <a href="./index.php?action=histoire">Histoire</a>
-            <a href="./index.php?action=histoire&sousMenu=liens">Liens</a>
             <a href="./index.php?action=histoire&sousMenu=education">Education</a>
+            <a href="./index.php?action=histoire&sousMenu=liens">Liens</a>
             <a href="./index.php?action=histoire&sousMenu=infos">Infos</a>
             <a href="./index.php?action=histoire&sousMenu=industrie">Industrie</a>
             <a href="./index.php?action=histoire&sousMenu=environnement">Environnement</a>

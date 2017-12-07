@@ -43,7 +43,6 @@
                     <?php 
                 }
             }
-
             ?>
 
 
@@ -145,7 +144,6 @@ if(isset($_GET['sousMenu']) and $_GET['sousMenu']=="lieuxSportifs"){
         window.onload = Scrolldown;
     </script>
 <?php
-
 }
 
 ?>

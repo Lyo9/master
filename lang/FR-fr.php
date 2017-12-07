@@ -33,7 +33,8 @@ define("TEXTE_PRESENTATION_CONTENU","Le neuvième arrondissement de la ville de 
 
 //Culture 
 
-define("LIEUX_CULTURELS","La culture à Lyon 9"); 
+define("LIEUX_CULTURELS","La culture à Lyon 9");
+define("LIEUX_SPORTIFS","Le sport à Lyon 9");
 
 
 //Feedback 

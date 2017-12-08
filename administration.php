@@ -17,7 +17,7 @@ $motDePasse = 'lyo9corp1234';
 
 
 //Si l'utilisateur est connecté 
-if(isset($_POST['password']) && $_POST['password'] == $motDePasse)
+if(isset($_POST['password']) && $_POST['password'] == $motDePasse )
 {
   try{
   $base = new PDO('mysql:host=127.0.0.1;dbname=lyo9corp','root','');
@@ -93,6 +93,7 @@ if(isset($_POST['password']) && $_POST['password'] == $motDePasse)
                     <label for="Age">Age minimum: </label> <input type="text" name="Age">
      
        </fieldset>
+           <input type = "hidden" value = "lyo9corp1234" name = "password"/>
            <input type="submit" value="Envoyer" />
         <br/>
         </form>

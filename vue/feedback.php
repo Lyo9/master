@@ -12,30 +12,40 @@ require_once("./lang/FR-fr.php");
 elseif($_SESSION['langue'] == "en")
 require_once("./lang/EN-en.php");
 
-
-echo "<h1>".FEEDBACK_HEADER."</h1>"; 
-
-//Affichage des erreurs s'il y en a 
-if (isset($statutErreur))
-{
-    foreach($messageErreurs as $messageErreur)
-    {
-        echo "<div class = 'message-erreur'>".$messageErreur."</div>"; 
-    }
-}
-
-//Affichage du formulaire de feedback 
 ?>
-<form method = "post" name = "feedback" action = "./index.php?action=sendFeedback">
 
-<input placeholder = "Adresse mail" name = "adresseMail" id="adresseMail"/>
-<input placeholder = "Objet" name = "feedbackObjet"/>
-<textarea placeholder = "Votre commentaire ... " name = "feedbackTexte"></textarea>
+<img class = "image-fond" src = "./ressources/images/fond_contact.JPG"/>
 
 
-<button type = "submit"> Envoyer</button>
+<div class = "contact-conteneur">
+	<div class = "contact-header titre"><?php echo FEEDBACK_HEADER;?></div>
+	<div class = "contact-header-bottom-bar"></div>
+	<form class = "contact-form" method = "post" name = "feedback" action = "./index.php?action=sendFeedback">
 
-</form>
+	<div class = "input-form">
+		<div class = "input-icon">
+			@
+		</div>
+		<input required placeholder = "Adresse mail" name = "adresseMail" id="adresseMail"/>
+	</div>
+	<div class = "input-form">
+		<i class = "fa fa-question-circle input-icon">
+		</i>	
+		<input placeholder = "Objet" name = "feedbackObjet"/>
+	</div>
+
+	<div class = "input-form-textarea">
+		<i class = "fa fa-comment-o input-icon">
+		</i>	
+		<textarea required placeholder = "Votre commentaire ... " name = "feedbackTexte"></textarea>
+	</div>
+
+
+	<button type = "submit" class = "submit-button titre"><i class = "fa fa-send-o send"></i>	 Envoyer</button>
+
+	</form>
+
+</div>
 
 <?php 
 

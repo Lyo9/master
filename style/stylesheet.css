@@ -678,8 +678,9 @@ _______________________________________ */
 }
 
 .input-form-textarea textarea{
-    vertical-align: middle;
-    width:85%;
+    vertical-align: top;
+    width:85% ;
+    height:30vh;
 }
 
 

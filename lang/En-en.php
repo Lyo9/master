@@ -32,18 +32,24 @@ define("TEXTE_PRESENTATION_CONTENU","The 9th district of Lyon is in a fully demo
 
 
 //Histoire et vie du quartier
+define("EDUCATION","Education");
+define("ENVIRONNEMENT","Environnement");
 define("HISTOIRE","History of Lyon 9");
+define("INDUSTRIE", "Industry"); 
+define("INFOS","Good to know");
+define("LIENS","Useful links");
+
 
 
 //Incontournables
-define("INCONTOURNABLES","Must see places");
-
-
+define ("BONS_PLANS","Good plans");
+define("INCONTOURNABLES","Must sees");
+define("GALERIE","Images gallery");
 
 
 //Culture 
-
-define("LIEUX_CULTURELS","Culture in Lyon 9"); 
+define("INFRASTRUCTURES","Buildings");
+define("LIEUX_CULTURELS","Culture in Lyon 9");
 define("LIEUX_SPORTIFS","Sports in Lyon 9");
 
 

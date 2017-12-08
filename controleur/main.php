@@ -58,21 +58,28 @@ $categorie = -1;
 //L'utilisateur a cliqué sur un lien
 if(isset($_GET['action']))
 {
-
+    $listeArticles = array();
+    $listeCategories = array(); 
     $action = $_GET['action']; 
 
     //L'utilisateur a choisi un lien du menu "Vie du quartier et hisoitre"
     if($action == 'histoire')
     {
         $contenu = "./vue/histoireEtVieDuQuartier.php";
-        $categorie = 0; 
+        //Sélectionner toutes les catégories 
+        for ($i = 1; $i < 5 ; $i++)
+        {
+            array_push($listeCategories, getArticlesByCategorie($i));
+        }
+
     }
 
     //L'utilisateur a choisi un lien du menu "Vie du quartier et hisoitre"
     if($action == 'incontournables')
     {
         $contenu = "./vue/incontournables.php";
-        $categorie = 1; 
+        array_push($listeCategories, getArticlesByCategorie(5));
+        array_push($listeCategories, getArticlesByCategorie(6));
 
     }
 
@@ -80,7 +87,9 @@ if(isset($_GET['action']))
     if($action == "culture")
     {
         $contenu = "./vue/lieux_culturels.php"; 
-        $categorie = 2; 
+        array_push($listeCategories, getArticlesByCategorie(7));
+        array_push($listeCategories, getArticlesByCategorie(8));
+        array_push($listeCategories, getArticlesByCategorie(9));
     }
 
     //L'utilisateur a cliqué sur "Laisser un commentaire"
@@ -157,7 +166,7 @@ if(isset($_GET['action']))
 
 
 //Récupération des articles 
-$listeArticles = getArticlesByCategorie($categorie);
+//$listeArticles = getArticlesByCategorie($categorie);
 
 
 //Appel des vues 

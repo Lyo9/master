@@ -6,16 +6,27 @@
     <img class = "image-fond" src = "./ressources/images/fond_culturel.JPG"/>
 
     <?php   
-    $categories = array(HISTOIRE,EDUCATION,INDUSTRIE,ENVIRONNEMENT); 
-
+    $categories = array(
+        1=>HISTOIRE, 2 => EDUCATION, 3=>INDUSTRIE, 4=>ENVIRONNEMENT
+        ); 
     ?>
+        <div class="mon-container">
+        <?php 
+        $categorie = 1; 
+        foreach($listeCategories as $listeArticles)
+        {   
+            ?>        
+            <div class = "categorie">               
+                <?php  
+                include("./vue/afficheCategorie.php");
+                ?>
 
-    <div class="mon-container">
-            <!-- LIEUX CULTURELS-->
-        <?php  
-        require_once("./vue/afficheCategorie.php");
-        ?>
-    </div>
+            </div>
+                <?php 
+            $categorie++; 
+        }
+            ?>       
+        </div>
 
 
 </div>

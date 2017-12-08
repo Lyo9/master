@@ -624,3 +624,85 @@ _______________________________________ */
     cursor: pointer;
     background-color: #613c00;
 }
+
+
+
+
+/*Contact*/ 
+.contact-conteneur{
+    min-height:100vh;
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-header{
+    display:flex; 
+    justify-content: center; 
+    font-size:3em;
+    color:white ;
+}
+
+.contact-header-bottom-bar{
+    width:30%;
+    border:solid 1px white ;
+    margin:10px;
+
+}
+
+.contact-form{
+    margin-top:8vh;
+}
+
+.input-form{
+    background:white;
+    display:inline-block;
+    padding:18px;
+    margin:10px;
+}
+
+.input-form input, .input-form-textarea textarea{
+    border:none;
+    padding: 10px;
+    font-size: 1.3em;
+    margin-left: 10px;
+}
+
+
+.input-form-textarea{
+    display:block; 
+    background:white;
+    padding:18px;
+    margin:10px;
+}
+
+.input-form-textarea textarea{
+    vertical-align: middle;
+    width:85%;
+}
+
+
+.input-icon{
+    display:inline-block;
+    font-size: 2em !important;
+    padding-right: 10px !important;
+    border-right: solid 3px !important;
+}
+
+.submit-button{
+    padding: 20px;
+    border-radius: 60px;
+    border: none;
+    width: 25%;
+    margin: 10px;
+    font-size:1.4em;
+}
+
+.submit-button:hover{
+    cursor: pointer;
+}
+
+.send{
+    margin-right:10px;
+}
